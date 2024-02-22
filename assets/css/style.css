@@ -16,3 +16,5 @@ body {
 .footer-logo-img {
     max-width: 200px;
 }
+
+a.nav-link {font-weight: 600;}
