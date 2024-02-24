@@ -1,23 +1,242 @@
+
+/* Roots For Color and Fonts */
+
+:root {
+    /* Colors: */
+    --fgx: #5C489D;
+    --fgg: #30AAD7;
+    --wam-gradient_navy: #153A6F;
+    --wam-gradient_dark-navy: #0F2243;
+    --gray70: #707070;
+    --wam-navy-tint: #E8EBF0;
+    --sky-blue: #8ABEE6;
+    --wam-navy: #143C6E;
+    --wam-navy-700: #153A6E;
+    --whiteClr: #FFFFFF;
+    --gray7d: #7D858D;
+    --wam-green: #007765;
+    --lightPink: #D2769B;
+    --lightBrown: #AF3C46;
+    --orange: #FE7E52;
+    --alternative: #EF855D;
+    --research: #C9819A;
+    --slatyClr: #8C88C1;
+    --lightBlue: #336EB8;
+    --greenClr: #009485;
+    --active: #63C6BD;
+    --skyClr: #35C5EC;
+    --strategic: #8A71B2;
+    --sky-tint: #E2EFF9;
+    --sky-tint-500: #96BEE3;
+    --black: #000;
+    /* Fonts */
+    --mainfont: 'poppins';
+    /* --mainFont: 'Calibre'; */
+    /* --secondaryFont: "calluna"; */
+    /* --barlowFont: 'Barlow Condensed', sans-serif; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ol,
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+button,
+input,
+select,
+textarea,
+option {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0;
+    font-weight: 300;
+    font-family: var(--mainfont);
+    color: var(--black);
+}
+
+
+
+/* h1,
+.h1 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.56px;
+    color: var(--whiteClr);
+    font-weight: 500;
+}
+
+h2,
+.h2 {
+    font-size: 35px;
+    letter-spacing: -0.35px;
+    line-height: 35px;
+    color: var(--whiteClr);
+    font-weight: 500;
+} */
+
+/* h1 span,
+.h1 span, */
+/* h2 span, */
+/* .h2 span {
+    font-family: var(--secondaryFont);
+    font-style: italic;
+    color: var(--sky-blue);
+    line-height: 0;
+} */
+
+/* h6,
+.h6 {
+    font-size: 25px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    color: var(--whiteClr);
+} */
 
 a {
-    color: cornflowerblue;
     text-decoration: none;
-}
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Helvetica';
-	font-weight: 500;
+    color: cornflowerblue;
 }
 
-.footer-logo-img {
-    max-width: 200px;
-}
+/* root */
+
+
+/* header */
 
 a.nav-link {font-weight: 600;}
 a.nav-link {
     margin: 15px;
 }
+/* header */
+
+/* footer */
+
+.footer-logo-img {
+    max-width: 200px;
+}
+/* footer */
+
+/* home page start */
+h3.welcome-name {
+    margin-top: 50px;
+    font-size: 134px;
+    font-weight: 500 ;
+}
+h2.welcome-quote{
+    margin-top: 10px;
+    margin-bottom: 44px;
+}
+.work-with-you {
+    text-transform: uppercase;
+    margin: 0 0 28px;
+}
+.welcome-learn-more {
+    text-transform: uppercase;
+    background-color: lightskyblue;
+    color: white;
+    border: white;
+}
+.welcome-learn-more:hover {
+    text-transform: uppercase;
+    background-color: darkblue;
+    color: white;
+    border: white;
+}
+.welcome-section{
+    background-color:#fafafa
+}
+.about-section{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+h2.about-heading {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+p.para-1, .para-2, .para-3, .para-4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ol.about-benefit li {
+    list-style: '✓';
+    font-size: 16px;
+}
+/* #welcome_section::before {
+    content: "";
+    background: #000000;
+    width: 220%;
+    position: absolute;
+    height: 112%;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    left: -60%;
+    top: 26%;
+    display: inline-block;
+    opacity:10%;
+    z-index:1;
+} */
+.footer-wrapper.row .col-sm-4 {
+    /* display: flex; */
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+    }
+.col-log-6.why-us-left, .col-log-6.why-us-right {
+    max-width: 50%;
+    }
+.row.why-us-left .col-log-6 {
+        max-width:50%;
+        padding: unset;
+    }
+.why-us-subheading {
+        font-size: 20px;
+        color: lightblue;
+    }
+.why-us-heading {
+        font-size: 40px;
+        margin: 10px 0px;
+    }
+.card-text{
+    font-size: 15px;
+}    
+.row.why-us-main-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h5.card-title {
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+/* home page start */
