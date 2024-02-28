@@ -331,7 +331,8 @@ div.features-box ul li {
     text-align: center;
 }
 section.keyfigure {
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-bottom:50px;
 }
 .features-box h2 {
     text-align:center;
@@ -342,4 +343,43 @@ footer {
     padding-top: 80px;
     background-color: lightblue;
 }
+section.success-stories-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.row.faq-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+h2.faq-heading {
+    text-align:center;
+}
+.accordion-button:not(.collapsed) {
+    background-color: lightblue;
+    }
+
+section.faq-section {
+    padding: 50px 0px;
+}
+section.how-can-i-help {
+    padding: 50px 0px;
+}
+
+  #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+  
 /* home page start */
