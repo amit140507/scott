@@ -33,7 +33,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     
 
@@ -41,7 +42,7 @@
 </head>
 <body>
     <header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" >
             <div class="container-fluid">
                 <div class="a">
                 <a class="navbar-brand" href="#">
@@ -370,59 +371,89 @@
 <section class="success-stories-section">
     <div class="container">
         <h2 class="success-stories-heading">Success Stories</h2>
-        <div class="slider">
-            
+        <div class="glide">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><div class="card-square">
+                    <div class="card" ">
+                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div></li>
+                <li class="glide__slide"><div class="card-square">
+                    <div class="card" ">
+                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div></li>
+                <li class="glide__slide">
+                    <div class="card-square">
+                    <div class="card" ">
+                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div></li>
+              </ul>
+            </div>
+          </div>
+
+
+        <!-- <div class="slider">
             <div class="card-square">
-                <div class="card" style="width: 18rem;">
+                <div class="card" ">
                 <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title 1</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="card-square">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                 <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title 2</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="card-square">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                 <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title 3</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="card-square">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                 <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title 4</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="card-square">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                 <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title 5</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
     </div>
 </section>
 <!-- Success Stories Section -->
@@ -528,7 +559,8 @@
 
     </main>
     <footer class="">
-        <button id="backToTopBtn">Back to Top ↑</button>
+        <a href="#" id="backToTopBtn" class="backToTopBtn" >Back to Top ↑</a>
+        <!-- <button class="backToTopBtn">Back to Top ↑</button> -->
         <div class="container">
             <div class="footer-wrapper row">
                 <div class=" col-sm-4">
@@ -570,18 +602,17 @@
                         class="mail">support@abcfeg.com</a>
                         </li>
                     </ul>
+                    <div class="social-links">
+                        <a href="#" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="link"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="link"> <i class="fa-brands fa-youtube"></i></a>
+                    </div>
                     
                     
                 </div>
             </div>
             <div class="copyright-section row">
-                <div class="social-links col-lg-3">
-                    <a href="#" class="link"><img src="assets/images/Icons/icon-linkedin.svg" alt=""></a>
-                    <a href="#" class="link"><img src="assets/images/Icons/icon-facebook.svg" alt=""></a>
-                    <a href="#" class="link"><img src="assets/images/Icons/icon-twitter.svg" alt=""></a>
-                    <a href="#" class="link"><img src="assets/images/Icons/icon-youtube.svg" alt=""></a>
-                    <a href="#" class="link"><img src="assets/images/Icons/wam-icon.svg" alt=""></a>
-                </div>
                 <div class="copyright">
                     <p><small>© 2024 Scott Laidler All Right Reserved. | <a>Privacy Policy</a> | <a>Terms and Conditions</a></small></p>
                 </div>
@@ -592,8 +623,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
      <!-- custom js link -->
      <script src="assets/js/custom.js"></script>
 </body>
+<!-- 1. slider issue dots and arrows
+    2. getting started section
+    3. how to use bootsdsrap classes and variable to make changes 
+    name 
+whatsapp number
+email
+current weight
+target weight
+ 
+-->
 </html>

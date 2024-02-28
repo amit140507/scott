@@ -139,6 +139,9 @@ a.nav-link {font-weight: 600;}
 a.nav-link {
     margin: 15px;
 }
+.navbar{
+    background-color: lightblue !important;
+}
 /* header */
 
 /* footer */
@@ -210,11 +213,14 @@ ol.about-benefit li {
     opacity:10%;
     z-index:1;
 } */
-.footer-wrapper.row .col-sm-4 {
-    /* display: flex; */
-      align-items: center; 
-      justify-content: center; 
-      text-align: center; 
+.footer-wrapper.row .col-sm-4:first-child {
+      text-align: left; 
+    }
+.footer-wrapper.row .col-sm-4:last-child {
+    text-align: right; 
+    }
+.footer-wrapper.row .col-sm-4:not(:first-child):not(:last-child) {
+    text-align: center; 
     }
 .col-log-6.why-us-left, .col-log-6.why-us-right {
     max-width: 50%;
@@ -367,7 +373,7 @@ section.how-can-i-help {
     padding: 50px 0px;
 }
 
-  #backToTopBtn {
+a.backToTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -380,6 +386,19 @@ section.how-can-i-help {
     cursor: pointer;
   }
 
-
-  
+ html {
+    scroll-behavior: smooth;
+  }
+a.backToTopBtn:hover {
+    background-color: darkblue;
+}
+.social-links{
+    padding-top:20px;
+}
+.copyright-section.row {
+    padding-top: 20px;
+}
+.social-links a.link {
+    margin-left: 10px;
+}
 /* home page start */

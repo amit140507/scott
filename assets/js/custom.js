@@ -36,30 +36,38 @@ document.querySelectorAll('.count').forEach(function (element) {
 // FOR BACK TO TOP BUTTON IN FOOTER
 document.addEventListener("DOMContentLoaded", function() {
     var backToTopBtn = document.getElementById("backToTopBtn");
-
+    var body = document.body;
     window.addEventListener("scroll", function() {
-        if (window.scrollY > window.outerHeight / 2) { // Adjust the value as needed
+        if (window.scrollY > body.scrollHeight / 2) { // Adjust the value as needed
             backToTopBtn.style.display = "block";
         } else {
             backToTopBtn.style.display = "none";
         }
     });
 
-    backToTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+    // backToTopBtn.addEventListener("click", function() {
+    //     window.scrollTo({
+    //         top: 100,
+    //         behavior: "smooth"
+    //     });
+    // });
 });
 
 // SLICK SLIDER IN SUCCESS STORIES SECTION IN HOME PAGE
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-    arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next')
-});
+// $('.slider').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     dots: true,
+//     arrows: true,
+//     prevArrow: $('.slick-prev'),
+//     nextArrow: $('.slick-next')
+// });
+
+var splide = new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+    perMove: 1,
+  } );
+  
+  splide.mount();
