@@ -54,37 +54,132 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // SLICK SLIDER IN SUCCESS STORIES SECTION IN HOME PAGE
-// $('.slider').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     dots: true,
-//     arrows: true,
-//     prevArrow: $('.slick-prev'),
-//     nextArrow: $('.slick-next')
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    arrows: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next')
+});
+
+
+// CODE FOR SPLIDE SUCCESS STORIES SLIDER
+
+// var splide = new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 1,
+//     perPage: 3,
+//     focus: 0,
+//     rewind: true,
+//     // focus  : 'center',
+//     breakpoints: {
+//         640: {
+//             perPage: 1,
+//         },
+//     },
+//     classes: {
+//         arrows: 'splide__arrows your-class-arrows',
+//         arrow: 'splide__arrow your-class-arrow',
+//         prev: 'splide__arrow--prev your-class-prev',
+//         next: 'splide__arrow--next your-class-next',
+//     },
+//     classes: {
+//         pagination: 'splide__pagination your-class-pagination',
+//         page: 'splide__pagination__page your-class-page',
+//     },
 // });
 
-var splide = new Splide( '.splide', {
-    type   : 'loop',
-    perPage: 2,
-    perMove: 1,
-    rewind : true,
-    // focus  : 'center',
-    breakpoints: {
-        640: {
-            perPage: 1,
-        },
-    },
-    classes: {
-		arrows: 'splide__arrows your-class-arrows',
-		arrow : 'splide__arrow your-class-arrow',
-		prev  : 'splide__arrow--prev your-class-prev',
-		next  : 'splide__arrow--next your-class-next',
-  },
-classes: {
-    pagination: 'splide__pagination your-class-pagination',
-    page      : 'splide__pagination__page your-class-page',
-},
-  } );
+// splide.mount();
+
+// /* glide slider code */
+
+// new Glide('.glide',{
+// type: 'carousel',
+//   startAt: 0,
+//   perView: 3,
+//   breakpoints: {
+//     800: {
+//     perView: 2
+//   }
+// },
+// }).mount();
+
+// /* glide slider code */
+
+
+// SWIPER SLIDER CODE
+
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     slidesPerView: 2,
+//   spaceBetween: 10,
+//   // Responsive breakpoints
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 20
+//     },
+//     // when window width is >= 480px
+//     480: {
+//       slidesPerView: 3,
+//       spaceBetween: 30
+//     },
+//     // when window width is >= 640px
+//     640: {
+//       slidesPerView: 4,
+//       spaceBetween: 40
+//     }
+//   },
+//     loop: true,
   
-  splide.mount();
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+  
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+  
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//   });
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+
+    slideToClickedSlide: true,
+    loop:true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 50,
+	autoplay:true,
+
+    coverflowEffect: {
+      rotate: 10,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    // rotate: 0,
+    // stretch: 0,
+    // depth: 400,
+    // modifier: 1, // 2,3
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+  });
+// SWIPER SLIDER CODE
+
+

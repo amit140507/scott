@@ -349,7 +349,7 @@ button.splide__arrow.splide__arrow--next {
 
 /* home page start */
 
-/* .one, .five ,.nine {
+.one, .five ,.nine {
     font-size:300px;
 }
 .four img ,.eight img {
@@ -424,4 +424,73 @@ left:450px;
 }
 .nine,.ten,.eleven{
 left:950px;
-}   */
+}  
+
+/* glide slider code */
+.glide__arrow{
+    font-size:80px;
+    }    
+.glide__arrow--left{
+position:absolute;
+    bottom:300px;
+    left: -64px;
+}
+.glide__arrow--right{
+position:absolute;
+    bottom:300px;
+    right: -64px;
+}
+.card {
+    margin-bottom: 1px;
+}
+/* glide slider code */
+
+/* swiper code */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* swiper code */
+
+
+#navbar .navbar-nav .nav-link {
+    color: white;
+}
+section.plan-pricing {
+    margin: 50px 0px;
+}
+p.card-text {
+    margin: 0px 0px 20px;
+    text-align: center;
+}
+h5.card-title.plan-name {
+    text-align: center;
+}
