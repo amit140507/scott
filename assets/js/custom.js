@@ -66,8 +66,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var splide = new Splide( '.splide', {
     type   : 'loop',
-    perPage: 3,
+    perPage: 2,
     perMove: 1,
+    rewind : true,
+    // focus  : 'center',
+    breakpoints: {
+        640: {
+            perPage: 1,
+        },
+    },
+    classes: {
+		arrows: 'splide__arrows your-class-arrows',
+		arrow : 'splide__arrow your-class-arrow',
+		prev  : 'splide__arrow--prev your-class-prev',
+		next  : 'splide__arrow--next your-class-next',
+  },
+classes: {
+    pagination: 'splide__pagination your-class-pagination',
+    page      : 'splide__pagination__page your-class-page',
+},
   } );
   
   splide.mount();

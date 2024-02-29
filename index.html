@@ -41,7 +41,7 @@
     <title>Scott Laider - Home Page</title>
 </head>
 <body>
-    <header>
+    <header class="header">
           <nav class="navbar navbar-expand-lg bg-body-tertiary" >
             <div class="container-fluid">
                 <div class="a">
@@ -371,40 +371,33 @@
 <section class="success-stories-section">
     <div class="container">
         <h2 class="success-stories-heading">Success Stories</h2>
-        <div class="glide">
-            <div data-glide-el="track" class="glide__track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><div class="card-square">
-                    <div class="card" ">
-                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div></li>
-                <li class="glide__slide"><div class="card-square">
-                    <div class="card" ">
-                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div></li>
-                <li class="glide__slide">
-                    <div class="card-square">
-                    <div class="card" ">
-                    <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div></li>
-              </ul>
-            </div>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"> <div class="card">
+                <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"> <div class="card">
+                <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"> <div class="card">
+                <img src="https://webassets-prod.ultimateperformance.com/uploads/2021/04/22120752/Ultimate-Performance-Amit.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div></li>
+            </ul>
           </div>
+        </div>
 
 
         <!-- <div class="slider">
@@ -628,7 +621,8 @@
      <!-- custom js link -->
      <script src="assets/js/custom.js"></script>
 </body>
-<!-- 1. slider issue dots and arrows
+<!-- 1. slider issue dots and arrows --done test with glide js for slider
+  how to make header sticky
     2. getting started section
     3. how to use bootsdsrap classes and variable to make changes 
     name 

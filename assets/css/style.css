@@ -142,6 +142,17 @@ a.nav-link {
 .navbar{
     background-color: lightblue !important;
 }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+main {
+    /* Add padding to the top of the content to prevent it from being hidden behind the header */
+    padding-top: 85px; /* Adjust according to your header's height */
+  }
 /* header */
 
 /* footer */
@@ -248,82 +259,7 @@ h5.card-title {
     padding-bottom: 20px;
     padding-top: 0px;
 }
- .one, .five ,.nine {
-    font-size:300px;
-}
-.four img ,.eight img {
-    height: 150px;
-}
-.two,.six,.ten{
-    font-weight: 600;
-    font-size: 40px;
-}
 
-
-.one{
-    position:relative;
-    top:200px;
-    
-}
-.two{
-position:relative;
-    top:200px;
-    left:150px;
-    
-}
-.three{
-    width: 400px;
-    position: relative;
-    top: 250px;
-    left: 100px;
-}
-.five{
-    position:relative;
-    top:150px;
-    
-}
-
-.six{position:relative;top: 185px;left:150px;}
-.seven{
-    width:400px;
-position:relative;
-    top:200px;
-    left:150px;
-}
-.nine{
-    position:relative;
-    top:50px;
-    
-}
-.ten{
-position:relative;
-    top:100px;
-    left:150px;
-    
-}
-.eleven{
-    width:400px;
-position:relative;
-    top:100px;
-    left:150px;
-}
-
- .four {
-    position: relative;
-    top: 122px;
-    left: 450px;
-}
-.eight {
-    position: relative;
-    top: 100px;
-    left: 800px;
-} 
- .five,.six,.seven{
-left:450px;
-}
-.nine,.ten,.eleven{
-left:950px;
-}  
 
 
 .keyfigure .figures-section .content-section .plus:after {
@@ -401,4 +337,91 @@ a.backToTopBtn:hover {
 .social-links a.link {
     margin-left: 10px;
 }
+button.splide__arrow.splide__arrow--prev {
+    position: absolute;
+    left: -71px;
+}
+
+button.splide__arrow.splide__arrow--next {
+    position: absolute;
+    right: -71px;
+}
+
 /* home page start */
+
+/* .one, .five ,.nine {
+    font-size:300px;
+}
+.four img ,.eight img {
+    height: 150px;
+}
+.two,.six,.ten{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.one{
+    position:relative;
+    top:200px;
+    
+}
+.two{
+position:relative;
+    top:200px;
+    left:150px;
+    
+}
+.three{
+    width: 400px;
+    position: relative;
+    top: 250px;
+    left: 100px;
+}
+.five{
+    position:relative;
+    top:150px;
+    
+}
+
+.six{position:relative;top: 185px;left:150px;}
+.seven{
+    width:400px;
+position:relative;
+    top:200px;
+    left:150px;
+}
+.nine{
+    position:relative;
+    top:50px;
+    
+}
+.ten{
+position:relative;
+    top:100px;
+    left:150px;
+    
+}
+.eleven{
+    width:400px;
+position:relative;
+    top:100px;
+    left:150px;
+}
+
+ .four {
+    position: relative;
+    top: 122px;
+    left: 450px;
+}
+.eight {
+    position: relative;
+    top: 100px;
+    left: 800px;
+} 
+ .five,.six,.seven{
+left:450px;
+}
+.nine,.ten,.eleven{
+left:950px;
+}   */
