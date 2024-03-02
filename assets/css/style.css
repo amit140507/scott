@@ -285,10 +285,6 @@ section.success-stories-section {
 h2.faq-heading {
     text-align:center;
 }
-.accordion-button:not(.collapsed) {
-    background-color: lightblue;
-    box-shadow: lightblue;
-    }
 
 section.faq-section {
     padding: 50px 0px;
@@ -337,82 +333,6 @@ button.splide__arrow.splide__arrow--next {
 
 /* home page start */
 
-.one, .five ,.nine {
-    font-size:300px;
-}
-.four img ,.eight img {
-    height: 150px;
-}
-.two,.six,.ten{
-    font-weight: 600;
-    font-size: 40px;
-}
-
-
-.one{
-    position:relative;
-    top:200px;
-    
-}
-.two{
-position:relative;
-    top:200px;
-    left:150px;
-    
-}
-.three{
-    width: 400px;
-    position: relative;
-    top: 250px;
-    left: 100px;
-}
-.five{
-    position:relative;
-    top:150px;
-    
-}
-
-.six{position:relative;top: 185px;left:150px;}
-.seven{
-    width:400px;
-position:relative;
-    top:200px;
-    left:150px;
-}
-.nine{
-    position:relative;
-    top:50px;
-    
-}
-.ten{
-position:relative;
-    top:100px;
-    left:150px;
-    
-}
-.eleven{
-    width:400px;
-position:relative;
-    top:100px;
-    left:150px;
-}
-
- .four {
-    position: relative;
-    top: 122px;
-    left: 450px;
-}
-.eight {
-    position: relative;
-    top: 100px;
-    left: 800px;
-} 
- .five,.six,.seven{
-left:450px;
-}
-.nine,.ten,.eleven{
-left:950px;
-}  
 
 /* glide slider code */
 .glide__arrow{
@@ -482,3 +402,55 @@ img.card-img-top.how-can-i-help {
 h5.card-title.plan-name.basic-plan {
     padding-top: 40px;
 }
+/* bootstrap accordion code */
+ /* .accordion-button::after {
+    background-image: url(https://creativemill.wilsonassetmanagement.com.au/wp-content/uploads/2023/05/Group-1902.svg);
+    width: 38px;
+    height: 20px;
+    background-position: center right;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image:  url(https://creativemill.wilsonassetmanagement.com.au/wp-content/uploads/2023/05/Group-2023.svg);
+    transform: unset;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    }
+.accordion-item {
+    margin-bottom:40px;
+    border: 0;
+    border-radius: 0;
+} */
+
+.step-one {
+    position: relative;
+    margin-top: 100px;
+    top: 0;
+    left: 0; 
+    max-width: 33%;
+}
+
+.step-two {
+  position: relative;
+    /* top: 100px; */
+    left: 33%;  
+    max-width: 33%;
+}
+
+.step-three {
+     position: relative;
+    /* top: 200px; */
+    left: 66%;
+    max-width: 33%; 
+}
+.step-number {
+    font-size: 200px;
+}
+.arrow-one img,
+.arrow-two img {
+    width: 10%;
+} 
+.arrow-one, .arrow-two {
+    position: relative;
+    left: 80%;
+}   

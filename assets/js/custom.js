@@ -67,44 +67,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // CODE FOR SPLIDE SUCCESS STORIES SLIDER
 
-var splide = new Splide('.splide', {
-    type: 'loop',
-    perMove: 1,
-    perPage: 3,
-    focus: 0,
-    rewind: true,
-    // focus  : 'center',
-    breakpoints: {
-        640: {
-            perPage: 1,
-        },
-    },
-    classes: {
-        arrows: 'splide__arrows your-class-arrows',
-        arrow: 'splide__arrow your-class-arrow',
-        prev: 'splide__arrow--prev your-class-prev',
-        next: 'splide__arrow--next your-class-next',
-    },
-    classes: {
-        pagination: 'splide__pagination your-class-pagination',
-        page: 'splide__pagination__page your-class-page',
-    },
-});
+// var splide = new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 1,
+//     perPage: 3,
+//     focus: 0,
+//     rewind: true,
+//     // focus  : 'center',
+//     breakpoints: {
+//         640: {
+//             perPage: 1,
+//         },
+//     },
+//     classes: {
+//         arrows: 'splide__arrows your-class-arrows',
+//         arrow: 'splide__arrow your-class-arrow',
+//         prev: 'splide__arrow--prev your-class-prev',
+//         next: 'splide__arrow--next your-class-next',
+//     },
+//     classes: {
+//         pagination: 'splide__pagination your-class-pagination',
+//         page: 'splide__pagination__page your-class-page',
+//     },
+// });
 
-splide.mount();
+// splide.mount();
 
 // /* glide slider code */
 
-// new Glide('.glide',{
-// type: 'carousel',
-//   startAt: 0,
-//   perView: 3,
-//   breakpoints: {
-//     800: {
-//     perView: 2
-//   }
-// },
-// }).mount();
+new Glide('.glide',{
+type: 'carousel',
+  startAt: 0,
+  perView: 3,
+  breakpoints: {
+    800: {
+    perView: 2
+  }
+},
+}).mount();
 
 // /* glide slider code */
 
@@ -183,21 +183,21 @@ splide.mount();
 // SWIPER SLIDER CODE
 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+// var acc = document.getElementsByClassName("accordion");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     /* Toggle between adding and removing the "active" class,
+//     to highlight the button that controls the panel */
+//     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+//     /* Toggle between hiding and showing the active panel */
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
