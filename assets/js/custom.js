@@ -54,44 +54,44 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // SLICK SLIDER IN SUCCESS STORIES SECTION IN HOME PAGE
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-    arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next')
-});
+// $('.slider').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     dots: true,
+//     arrows: true,
+//     prevArrow: $('.slick-prev'),
+//     nextArrow: $('.slick-next')
+// });
 
 
 // CODE FOR SPLIDE SUCCESS STORIES SLIDER
 
-// var splide = new Splide('.splide', {
-//     type: 'loop',
-//     perMove: 1,
-//     perPage: 3,
-//     focus: 0,
-//     rewind: true,
-//     // focus  : 'center',
-//     breakpoints: {
-//         640: {
-//             perPage: 1,
-//         },
-//     },
-//     classes: {
-//         arrows: 'splide__arrows your-class-arrows',
-//         arrow: 'splide__arrow your-class-arrow',
-//         prev: 'splide__arrow--prev your-class-prev',
-//         next: 'splide__arrow--next your-class-next',
-//     },
-//     classes: {
-//         pagination: 'splide__pagination your-class-pagination',
-//         page: 'splide__pagination__page your-class-page',
-//     },
-// });
+var splide = new Splide('.splide', {
+    type: 'loop',
+    perMove: 1,
+    perPage: 3,
+    focus: 0,
+    rewind: true,
+    // focus  : 'center',
+    breakpoints: {
+        640: {
+            perPage: 1,
+        },
+    },
+    classes: {
+        arrows: 'splide__arrows your-class-arrows',
+        arrow: 'splide__arrow your-class-arrow',
+        prev: 'splide__arrow--prev your-class-prev',
+        next: 'splide__arrow--next your-class-next',
+    },
+    classes: {
+        pagination: 'splide__pagination your-class-pagination',
+        page: 'splide__pagination__page your-class-page',
+    },
+});
 
-// splide.mount();
+splide.mount();
 
 // /* glide slider code */
 
@@ -151,35 +151,53 @@ $('.slider').slick({
 //       el: '.swiper-scrollbar',
 //     },
 //   });
-var swiper = new Swiper(".swiper", {
-    effect: "coverflow",
+// var swiper = new Swiper(".swiper", {
+    // effect: "coverflow",
 
-    slideToClickedSlide: true,
-    loop:true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
-	autoplay:true,
+    // slideToClickedSlide: true,
+    // loop:true,
+    // centeredSlides: true,
+    // slidesPerView: 3,
+    // spaceBetween: 50,
+	// autoplay:true,
 
-    coverflowEffect: {
-      rotate: 10,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+    // coverflowEffect: {
+    //   rotate: 10,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows: true,
     // rotate: 0,
     // stretch: 0,
     // depth: 400,
     // modifier: 1, // 2,3
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-  });
+    // },
+//     pagination: {
+//       el: ".swiper-pagination",
+//     },
+//     navigation: {
+//               nextEl: '.swiper-button-next',
+//               prevEl: '.swiper-button-prev',
+//             },
+//   });
 // SWIPER SLIDER CODE
 
 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
