@@ -387,19 +387,17 @@ h5.card-title.plan-name {
     text-align: center;
 }
 
-img.card-img-top.how-can-i-help {
-    width: 50px;
-    height:50px;
+ img.card-img-top.how-can-i-help {
+    width:10%;
+    height: auto;
 }
-.card.how-can-i-help .card-body {
-    display: flex;
+.how-can-i-help div.card-body{
     height: 200px;
 }
-.card-content {
-    margin-left: 20px;
+.card-content, .card-image {
     text-align: center;
 }
-h5.card-title.plan-name.basic-plan {
+h5.card-title.plan-name {
     padding-top: 40px;
 }
 /* bootstrap accordion code */
@@ -420,26 +418,25 @@ h5.card-title.plan-name.basic-plan {
     margin-bottom:40px;
     border: 0;
     border-radius: 0;
+}
+.accordion button[aria-expanded=true] .icon {
+    transform: rotate(315deg);
 } */
 
-.step-one {
+/* .step-one {
     position: relative;
     margin-top: 100px;
     top: 0;
     left: 0; 
     max-width: 33%;
 }
-
 .step-two {
   position: relative;
-    /* top: 100px; */
     left: 33%;  
     max-width: 33%;
 }
-
 .step-three {
      position: relative;
-    /* top: 200px; */
     left: 66%;
     max-width: 33%; 
 }
@@ -453,4 +450,49 @@ h5.card-title.plan-name.basic-plan {
 .arrow-one, .arrow-two {
     position: relative;
     left: 80%;
-}   
+}    */
+
+
+
+.step-number {
+    font-size: 200px;
+}
+.steps {
+    height:60vh;
+    display:flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+.steps > * {
+    width: 33%;
+}
+.step-one {
+    align-self:start;
+    /* border:#000 solid; */
+}
+.step-two {
+    align-self:center;
+    /* border:#f36363 solid; */
+}
+.step-three {
+    align-self:end;
+    /* border:hsl(123, 100%, 54%) solid; */
+}
+.arrow-one img,
+.arrow-two img {
+    width: 10%;
+} 
+.arrow-one, .arrow-two {
+    position: absolute;
+} 
+.arrow-one {
+    top:30%;
+       left:30%
+   } 
+   .arrow-two {
+       top:66%;
+       left:60%
+   } 
