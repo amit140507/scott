@@ -193,9 +193,9 @@ h2.welcome-quote{
     border: white;
 }
 
-section:nth-child(odd){
+/* section:nth-child(odd){
     background-color:#efefef
-}
+} */
 h2.about-heading {
     font-size: 40px;
     padding-bottom: 40px;
@@ -208,15 +208,7 @@ ol.about-benefit li {
     list-style: '✓';
     font-size: 16px;
 }
-.footer-wrapper.row .col-sm-4:first-child {
-      text-align: left; 
-    }
-.footer-wrapper.row .col-sm-4:last-child {
-    text-align: right; 
-    }
-.footer-wrapper.row .col-sm-4:not(:first-child):not(:last-child) {
-    text-align: center; 
-    }
+
 .col-log-6.why-us-left, .col-log-6.why-us-right {
     max-width: 50%;
     }
@@ -422,9 +414,7 @@ h5.card-title.plan-name {
     border: 0;
     border-radius: 0;
 }
-.accordion button[aria-expanded=true] .icon {
-    transform: rotate(315deg);
-} */
+ */
 
 /* .step-one {
     position: relative;
@@ -529,3 +519,63 @@ p.contact-us-para, h2.contact-us-heading {
 button.btn.btn-primary {
     padding: 10px 50px;
 }
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 800px) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+  }
+
+.header-logo{
+  position: sticky;
+  opacity: 70%;
+  }
+/* t and c */
+
+div.heading h1 {
+    text-align: center;
+    font-size: 76px;
+    padding-block: 1em;
+}
+.content-t-and-c div h3, .content-privacy-policy div h3{
+    margin:30px 0px 20px 0px;
+}
+.content-t-and-c div p, .content-privacy-policy div p{
+    margin:20px 0px;
+    text-align: justify;
+}
+/* t and c */
+
+/* faq */
+
+.heading-faq {
+    background-image: url(/assets/images/for-faq.jpg);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: top bottom;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-faq h1{
+    text-align: center;
+    
+}
+.content-faq{
+    padding: 50px 0px;
+}
+.accordion-button::after {
+
+    background-image: url(/assets/images/plus-solid.svg);
+    
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/images/plus-solid.svg);
+    transform: rotate(315deg);
+}
+/* faq */
