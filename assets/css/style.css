@@ -152,7 +152,7 @@ a.nav-link {
   }
 main {
     /* Add padding to the top of the content to prevent it from being hidden behind the header */
-    padding-top: 85px; /* Adjust according to your header's height */
+    padding-top: 150px; /* Adjust according to your header's height */
   }
 /* header */
 
@@ -304,7 +304,7 @@ a.backToTopBtn:hover {
     padding-top: 20px;
 }
 .social-links a.link {
-    margin-left: 10px;
+    margin-inline: 5px;
 }
 button.splide__arrow.splide__arrow--prev {
     position: absolute;
@@ -497,6 +497,11 @@ div.form
 {
     display: block;
     text-align: center;
+    border: 2px #98e2ff solid;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 42px;
+    box-shadow: 0px 10px 50px hsla(240,7%,62%,1);
 }
 form
 {
@@ -579,3 +584,49 @@ div.heading h1 {
     transform: rotate(315deg);
 }
 /* faq */
+.container-fluid.header-contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+    border-bottom: 1px white solid;
+    background-color: lightblue;
+}
+.header-phone > * {
+    margin-inline: 10px;
+}
+.footer-wrapper div ul li {
+    margin-block:10px;
+}
+li.nav-item:last-child {
+    background-color:#2b75ff;
+    border-radius:10px;
+    padding-inline:10px;
+}
+.get-started-container {
+    display:flex;
+    /* flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0; */
+}
+.get-started-container >* {
+    width: 100%;
+}
+
+.get-started-contact-details ul li {
+    margin-block:30px;
+}
+.get-started-contact-details {
+    margin-left:20%;
+}
+.get-started-contact-details ul li:nth-child(3) a{
+    border-radius: 5px;
+    background-color:#25d366;
+    color: white;
+    padding:10px;
+}
+.get-started-contact-details ul li:nth-child(4) a{
+    border-radius: 5px;
+    background: linear-gradient(0.25turn,#f9ce34, #ee2a7b, #6228d7);
+    color: white;
+    padding:10px;
+}
