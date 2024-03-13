@@ -703,3 +703,49 @@ padding-block:10px;
 section.transformations-page-section div h1{
 padding-block:100px;
 }
+.services{
+    display: flex;
+    gap: 5%;
+}
+.ind-services{
+    flex: 1;
+}
+
+.ind-services-page{
+    display: flex;
+}
+.ind-services-page:nth-child(even){
+    flex-direction: row-reverse;
+}
+.services-image img{
+    max-width:100%;
+    height: auto;
+
+}
+.ind-services-page{
+    margin-block:5%;
+}
+.content-service-page {
+    align-self: center;
+    padding-inline: 3%;
+}
+.content-service-page h3 {
+    margin-block:10px;
+}
+.content-service-page  p{
+    word-spacing:4px;
+}
+h1.services-heading {
+    text-align: center;
+}
+.training-philisophy {
+    display: flex;
+    gap: 8%;
+}
+section.training-philisophy-section div h2 {
+    text-align:center;
+    margin-block:50px;
+}
+section.training-philisophy-section {
+    background-color: var(--fgg);
+}
