@@ -137,8 +137,9 @@ a {
 /* header */
 
 a.nav-link {font-weight: 600;}
-a.nav-link {
-    margin: 15px;
+.nav-item a.nav-link {
+    margin-inline: 10px;
+    margin-block: 5px;
 }
 .navbar{
     background-color: lightblue !important;
@@ -527,6 +528,7 @@ button.btn.btn-primary {
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 @media (max-width: 800px) {
     .footer-wrapper {
