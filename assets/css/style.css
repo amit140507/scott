@@ -687,7 +687,8 @@ li.nav-item:last-child {
     gap: 30px;
 }
 .gallery > * {
-flex-basis: 350px; width: 350px;
+flex-basis: 350px; 
+/* width: 350px; */
 }
 .gallery-image img {
 object-fit: cover;
@@ -740,12 +741,31 @@ h1.services-heading {
 }
 .training-philisophy {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8%;
 }
+.ind-philosophy{
+    flex-basis: 350px;
+    text-align: center;
+    }
 section.training-philisophy-section div h2 {
     text-align:center;
     margin-block:50px;
 }
 section.training-philisophy-section {
     background-color: var(--fgg);
+}
+.ind-philosophy {
+    text-align: center;
+}
+.about-intro-section {
+    text-align: center;
+}
+.about-intro-section p{
+   margin-block:30px;
+}
+.about-welcome-image img{
+    width: 100%;
+    height: auto;
 }
