@@ -153,7 +153,8 @@ a.nav-link {font-weight: 600;}
   }
 main {
     /* Add padding to the top of the content to prevent it from being hidden behind the header */
-    padding-top: 119px; /* Adjust according to your header's height */
+    padding-top: 110px;
+     /* Adjust according to your header's height */
   }
 /* header */
 
@@ -533,6 +534,8 @@ button.btn.btn-primary {
 @media (max-width: 800px) {
     .footer-wrapper {
       flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -635,18 +638,7 @@ li.nav-item:last-child {
     padding:10px;
 } */
 
-.contact-us-container {
-    display: flex;
-}
-.contact-us-container >* {
-    flex: 1;
-} 
-.contact-us-contact-details ul li{
-    margin-block:20px;
-}
-.contact-us-contact-details{
-    margin-left:10%;
-}
+
 
 /* backgrond image  */
 /* .contact-us-section{
@@ -738,34 +730,4 @@ padding-block:100px;
 }
 h1.services-heading {
     text-align: center;
-}
-.training-philisophy {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8%;
-}
-.ind-philosophy{
-    flex-basis: 350px;
-    text-align: center;
-    }
-section.training-philisophy-section div h2 {
-    text-align:center;
-    margin-block:50px;
-}
-section.training-philisophy-section {
-    background-color: var(--fgg);
-}
-.ind-philosophy {
-    text-align: center;
-}
-.about-intro-section {
-    text-align: center;
-}
-.about-intro-section p{
-   margin-block:30px;
-}
-.about-welcome-image img{
-    width: 100%;
-    height: auto;
 }
