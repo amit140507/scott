@@ -608,69 +608,11 @@ li.nav-item:last-child {
     border-radius:10px;
     padding-inline:10px;
 }
-.get-started-container {
-    display:flex;
-    /* flex-flow: row nowrap;
-    flex-grow: 1;
-    flex-basis: 0; */
-}
-.get-started-container >* {
-    width: 100%;
-}
-
-.get-started-contact-details ul li {
-    margin-block:30px;
-}
-.get-started-contact-details {
-    margin-left:20%;
-}
-.get-started-contact-details ul li:nth-child(3) a{
-    border-radius: 5px;
-    background-color:#25d366;
-    color: white;
-    padding:10px;
-    font-weight: 500;
-}
-/* .get-started-contact-details ul li:nth-child(4) a{
-    border-radius: 5px;
-    background: linear-gradient(0.25turn,#f9ce34, #ee2a7b, #6228d7);
-    color: white;
-    padding:10px;
-} */
 
 
 
-/* backgrond image  */
-/* .contact-us-section{
-    position: relative;
-}
-.contact-us-section .container:after {
-    content:'';
-    background: url('/assets/images/pexels-valeria-ushakova-3094230.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    opacity: 0.2; 
-} */
-/* backgrond image  */
 
-.heading-contact-us {
-    background-image: url(/assets/images/pexels-valeria-ushakova-3094230.jpg);
-    background-size:     cover;                    
-    background-repeat:   no-repeat;
-    background-position: center center;
-    height: 100%;
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .gallery {
     display: flex;
@@ -702,32 +644,4 @@ padding-block:100px;
 }
 .ind-services{
     flex: 1;
-}
-
-.ind-services-page{
-    display: flex;
-}
-.ind-services-page:nth-child(even){
-    flex-direction: row-reverse;
-}
-.services-image img{
-    max-width:100%;
-    height: auto;
-
-}
-.ind-services-page{
-    margin-block:5%;
-}
-.content-service-page {
-    align-self: center;
-    padding-inline: 3%;
-}
-.content-service-page h3 {
-    margin-block:10px;
-}
-.content-service-page  p{
-    word-spacing:4px;
-}
-h1.services-heading {
-    text-align: center;
 }
