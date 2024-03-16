@@ -147,12 +147,18 @@ main {
 /* footer */
 
 /* home page start */
-h3.welcome-name {
+.home-page-welcome-image img{
+    height: 80vh;
+    text-align: center;
+    max-width: 100%;
+}
+
+h3.home-page-welcome-name {
     margin-top: 50px;
     font-size: 134px;
     font-weight: 500 ;
 }
-h2.welcome-quote{
+h2.home-page-welcome-quote{
     margin-top: 10px;
     margin-bottom: 44px;
 }
@@ -160,30 +166,68 @@ h2.welcome-quote{
     text-transform: uppercase;
     margin: 0 0 28px;
 }
-.welcome-learn-more {
+.home-page-welcome-learn-more {
     text-transform: uppercase;
     background-color: var(--maincolor);
     color: white;
     border: white;
 }
-.welcome-learn-more:hover {
+.home-page-welcome-learn-more:hover {
     text-transform: uppercase;
     background-color: var(--secondarycolor);
     color: white;
     border: white;
 }
-h2.about-heading {
+.home-page-welcome-main-div{
+    display: flex;
+}
+.home-page-welcome-main-div > *{
+    flex: 1;
+}
+@media (max-width:800px) {
+    .home-page-welcome-main-div{
+        flex-direction: column;
+    }
+    h3.home-page-welcome-name {
+        font-size: 65px;
+    }
+    .home-page-welcome-image{
+        display: none;
+    }
+}
+/* about section */
+
+h2.home-page-about-heading {
     font-size: 40px;
     padding-bottom: 40px;
 }
-p.para-1, .para-2, .para-3, .para-4 {
+.home-page-about-content div > p {
     font-size: 18px;
     margin-bottom: 20px;
 }
-ol.about-benefit li {
+ol.home-page-about-benefit li {
     list-style: '✓';
     font-size: 16px;
 }
+.home-page-about-main-div{
+    display: flex;
+}
+.home-page-about-main-div > *{
+    flex:1;
+}
+.home-page-about-image img{
+    max-width: 100%;
+}
+@media (max-width:800px) {
+    .home-page-about-main-div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* about section */
+
+/* why us section */
+
 
 .col-log-6.why-us-left, .col-log-6.why-us-right {
     max-width: 50%;
@@ -200,17 +244,29 @@ ol.about-benefit li {
         font-size: 40px;
         margin: 10px 0px;
     }
-.card-text{
+
+/* why us section */
+
+
+/* succcess stories */
+
+.ind-success-stories {
+    border: 1px grey solid;
+    border-radius: 5%;
+  overflow:hidden;
+  padding-bottom: 5%;
+}
+.ind-success-stories .card-text {
     font-size: 15px;
-}    
-.row.why-us-main-row {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-h5.card-title {
-    padding-bottom: 20px;
-    padding-top: 0px;
+
+.ind-success-stories div h5.card-title {
+    padding-block: 5%;
+    text-align: center;
 }
+
+/* succcess stories */
+
 
 
 /* keyfigure section */
@@ -312,19 +368,28 @@ button.splide__arrow.splide__arrow--next {
 /* glide slider code */
 .glide__arrow{
     font-size:80px;
-    }    
+    position: relative;
+}    
+.glide__arrow {
+    top: 40%;
+}
 .glide__arrow--left{
 position:absolute;
-    bottom:300px;
-    left: -64px;
+right: 100%;;
 }
 .glide__arrow--right{
 position:absolute;
-    bottom:300px;
-    right: -64px;
+left: 100%;
 }
-.card {
-    margin-bottom: 1px;
+@media (max-width:800px) {
+    .glide__arrow--left{
+    position:absolute;
+    right: 100%;;
+    }
+    .glide__arrow--right{
+    position:absolute;
+    left: 100%;
+    }
 }
 /* glide slider code */
 
@@ -390,17 +455,40 @@ p.card-text {
     text-align: center;
 }
 
-/* How I can Help */
-
- img.card-img-top.home-page-how-can-i-help {
+/* How can i Help */
+.home-page-how-can-i-help-main-div{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home-page-how-can-i-help-card{
+    flex: 40%;
+    border-radius: 10px;
+    border: 1px #e7e7e7  solid;
+    padding: 3%;
+    margin:1%
+}
+.home-page-how-can-i-help-card-img {
     width:10%;
     height: auto;
+}
+.home-page-how-can-i-help-card {
+    text-align: center;
 }
 .home-page-how-can-i-help div.card-body{
     height: 200px;
 }
+@media (max-width:800px) {
+    .home-page-how-can-i-help-main-div{
+        flex-direction: column;
+    }
+    .home-page-how-can-i-help-card{
+        flex: 50%;
+    }
+}
+/* How can i Help */
 
-/* How I can Help */
+
 .card-content, .card-image {
     text-align: center;
 }
@@ -471,10 +559,7 @@ div.form form
 p.contact-us-para, h2.contact-us-heading {
     text-align: center;
 }
-.welcome-image{
-    height: 80vh;
-    text-align: center;
-}
+
 .form-submit-button{
     text-align: center;
 }
@@ -587,10 +672,19 @@ padding-block:10px;
 section.transformations-page-section div h1{
 padding-block:100px;
 }
+/* our services program */
 .services{
     display: flex;
     gap: 5%;
+    justify-content: space-evenly;
+    text-align: center;
 }
 .ind-services{
     flex: 1;
 }
+@media (max-width:800px) {
+    .services{
+        flex-direction: column;
+    }
+}
+/* our services program */
