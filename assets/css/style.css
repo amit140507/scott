@@ -228,23 +228,36 @@ ol.home-page-about-benefit li {
 
 /* why us section */
 
-
-.col-log-6.why-us-left, .col-log-6.why-us-right {
-    max-width: 50%;
-    }
-.row.why-us-left .col-log-6 {
-        max-width:50%;
-        padding: unset;
-    }
-.why-us-subheading {
+.home-page-why-us-subheading {
         font-size: 20px;
-        color: lightblue;
+        font-weight: 400;
+        color: var(--maincolor);
     }
-.why-us-heading {
+.home-page-why-us-heading {
         font-size: 40px;
+        font-weight: 500;
         margin: 10px 0px;
     }
-
+.home-page-why-us-main-div, .home-page-why-us-content-card{
+    display: flex;
+}
+.home-page-why-us-main-div > *{
+    flex:1;
+}
+.home-page-why-us-image img{
+    max-width: 100%;
+}
+.home-page-why-us-content-card{
+    flex-wrap: wrap;
+}
+.home-page-why-us-ind-content-card{
+    flex: 40%;
+}
+@media (max-width:800px) {
+    .home-page-why-us-main-div,.home-page-why-us-content-card{
+        flex-direction: column;
+    }
+}
 /* why us section */
 
 
