@@ -1,23 +1,25 @@
-document.querySelectorAll('.count').forEach(function (element) {
-    element.setAttribute('keyfigure', 0);
+// CODE FOR COUNTER IN HOME PAGE STEPS SECTION
+var elements = document.querySelectorAll('.count');
+elements.forEach(function (element) {
     var startCount = 0;
-    var endCount = parseInt(element.textContent, 10);
-    var duration = 7000; // Change count up speed here
+    var endCount = parseInt(element.innerText, 10);
+    var duration = 20000; // Change count up speed here
+    var countDifference = endCount - startCount;
     var startTime = null;
 
     function step(timestamp) {
-        if (!startTime) startTime = timestamp;
-        var progress = timestamp - startTime;
+        var progress = timestamp;
         var percentage = Math.min(progress / duration, 1);
-        var currentCount = Math.ceil((endCount - startCount) * percentage + startCount);
-        element.textContent = currentCount;
+        var currentCount = Math.ceil(countDifference * percentage + startCount);
+        element.innerText = currentCount;
         if (percentage < 1) {
             window.requestAnimationFrame(step);
         }
     }
-
+    
     window.requestAnimationFrame(step);
 });
+
 
 // FOR BACK TO TOP BUTTON IN FOOTER
 document.addEventListener("DOMContentLoaded", function() {
