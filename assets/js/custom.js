@@ -34,13 +34,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById("navbar-toggler").addEventListener("click", function() {
-    var navbarcollapse = document.getElementById("navbar-collapse");
-    var navbartogglericon = document.getElementById("navbar-toggler-icon");
-    navbarcollapse.classList.toggle("show");
-    navbartogglericon.classList.toggle("show");
-    
-});
+var navtoggler = document.getElementById("navbar-toggler");
+if (navtoggler) {
+    navtoggler.addEventListener("click", function () {
+        var navbarcollapse = document.getElementById("navbar-collapse");
+        var navbartogglericon = document.getElementById("navbar-toggler-icon");
+        navbarcollapse.classList.toggle("show");
+        navbartogglericon.classList.toggle("show");
+    });
+}
 
 // /* glide slider code */
 
