@@ -1,0 +1,30 @@
+/* faq */
+
+.heading-faq {
+    background-image: url(/assets/images/for-faq.jpg);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: top bottom;
+    height: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-faq h1{
+    text-align: center;
+    color: white;
+}
+.content-faq{
+    padding: 50px 0px;
+}
+.accordion-button::after {
+
+    background-image: url(/assets/images/plus-solid.svg);
+    
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/images/plus-solid.svg);
+    transform: rotate(315deg);
+}
+/* faq */

@@ -245,10 +245,10 @@ ol.home-page-about-benefit li {
 /* succcess stories */
 
 .ind-success-stories {
-    border: 1px grey solid;
-    border-radius: 5%;
+    border: 1px rgb(220, 220, 220) solid;
+    /* border-radius: 5%;
   overflow:hidden;
-  padding-bottom: 5%;
+  padding-bottom: 5%; */
 }
 .ind-success-stories .card-text {
     font-size: 15px;
@@ -259,6 +259,16 @@ ol.home-page-about-benefit li {
     text-align: center;
 }
 
+.client-detail{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5%;
+    flex-wrap: wrap;
+}
+.client-inmprovement{
+flex-grow: 1;
+flex-basis: 100%;
+}
 /* succcess stories */
 
 
@@ -304,17 +314,75 @@ footer {
     padding-top: 80px;
     background-color: var(--maincolor);
 }
-
-.row.faq-row {
+/* faq section */
+.faq-row {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.faq-row div{
+    flex-basis: 100%;
+}
+.faq-row {
+    display: flex;
 }
 
 
 h2.faq-heading {
     text-align:center;
 }
+.single-accordion-item {
+    border: 1px rgb(233, 233, 233) solid;
+    margin: 1rem;
 
+    box-shadow: 0px 0px 10px 1px  var(--maincolor);
+}
+
+.single-accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+}
+.single-accordion-button:after {
+    flex-shrink: 0;
+    width: 17px;
+    height: 20px;
+    margin-left: auto;
+    content: "";
+    background-image: url(/assets/images/plus-solid.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+.single-accordion-button:not(.collapsed)::after {
+    /* background-image: url(/assets/images/hamburger-close.svg); */
+    transform: rotate(-135deg);
+    transition: transform 0.3s ease-in-out;
+}
+.single-accordion-body{
+    padding: 16px 20px;
+}
+@media (max-width:800px) {
+    .faq-row {
+        flex-direction:column;
+    }
+    .single-accordion{
+        display:flex;
+        flex-direction:column;
+        
+    }
+}
+.accordion-collapse{
+    display: none;
+}
+/* faq section */
 
 
 
@@ -346,44 +414,54 @@ a.backToTopBtn:hover {
 .social-links a.link {
     margin-inline: 5px;
 }
-button.splide__arrow.splide__arrow--prev {
-    position: absolute;
-    left: -71px;
-}
-
-button.splide__arrow.splide__arrow--next {
-    position: absolute;
-    right: -71px;
-}
 
 /* home page start */
 
 
 /* glide slider code */
 .glide__arrow{
-    font-size:80px;
+    font-size:3.5rem;
     position: relative;
-}    
+}  
 .glide__arrow {
-    top: 40%;
+    bottom: 103%;
 }
 .glide__arrow--left{
 position:absolute;
-right: 100%;;
+left: 90%;;
 }
 .glide__arrow--right{
 position:absolute;
-left: 100%;
-}
+left: 95%;
+} 
 @media (max-width:800px) {
-    .glide__arrow--left{
-    position:absolute;
-    right: 90%;
-    }
-    .glide__arrow--right{
-    position:absolute;
-    left: 90%;
-    }
+    .glide__arrow{
+        display: none;
+    } 
+}
+
+.slider__bullets {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.slider__bullet {
+    background-color: hsla(0, 0%, 45%, 0.5);
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    line-height: 0;
+    -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
+    margin: 0 0.25em;
+}
+.slider__bullet[class*=active] {
+    background-color: var(--secondarycolor);
 }
 /* glide slider code */
 
@@ -417,27 +495,6 @@ h3.card-title.home-page-plan-name {
     }
 }
 /* plan section*/
-
-
-
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-/* swiper code */
 
 
 #navbar .navbar-nav .nav-link {
@@ -552,10 +609,28 @@ p.card-text {
 }
 /* step section */
 
+/* form section */
+.form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 div.form
 {
-    display: block;
+    /* display: block; */
     text-align: center;
     border: 2px #98e2ff solid;
     border-radius: 10px;
@@ -563,14 +638,12 @@ div.form
     padding: 42px;
     box-shadow: 0px 10px 50px hsla(240,7%,62%,1);
 }
-div.form form
+/* div.form form
 {
     display: inline-block;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin-inline:auto;
     text-align: left;
-}
+} */
 p.contact-us-para, h2.contact-us-heading {
     text-align: center;
 }
@@ -581,6 +654,8 @@ p.contact-us-para, h2.contact-us-heading {
 button.btn.btn-primary {
     padding: 10px 50px;
 }
+/* form section */
+
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
@@ -609,36 +684,7 @@ div.heading h1 {
 }
 /* t and c */
 
-/* faq */
 
-.heading-faq {
-    background-image: url(/assets/images/for-faq.jpg);
-    background-size:     cover;                    
-    background-repeat:   no-repeat;
-    background-position: top bottom;
-    height: 100%;
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.heading-faq h1{
-    text-align: center;
-    color: white;
-}
-.content-faq{
-    padding: 50px 0px;
-}
-.accordion-button::after {
-
-    background-image: url(/assets/images/plus-solid.svg);
-    
-}
-.accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/images/plus-solid.svg);
-    transform: rotate(315deg);
-}
-/* faq */
 .container-fluid.header-contact-info {
     display: flex;
     justify-content: space-between;
@@ -702,4 +748,8 @@ padding-block:100px;
 svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
     width: 15px;
     height: 15px;
+}
+svg {
+    width: 20px;
+    height: 20px;
 }

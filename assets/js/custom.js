@@ -44,7 +44,41 @@ if (navtoggler) {
     });
 }
 
+
+// accordion code
+var acc = document.getElementsByClassName("single-accordion-item");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.querySelector('.accordion-collapse');
+    // var panel = this.nextElementSibling;
+    var accordionbutton = this.querySelector('.single-accordion-button'); 
+    if (panel.style.display === "block") {
+    accordionbutton.classList.add('collapsed');
+      panel.style.display = "none";
+    } else {
+        accordionbutton.classList.remove('collapsed');
+      panel.style.display = "block";
+    }
+  });
+}
+// accordion code
+
+
 // /* glide slider code */
+var bulletCount = document.querySelectorAll('.glide__slide').length;
+var bulletWrapper = document.getElementById('glide__bullets');
+for (let index = 0; index < bulletCount; index++) {
+    const button = document.createElement('button');
+    button.className = 'glide__bullet slider__bullet';
+    button.setAttribute("data-glide-dir", '='+index);
+    bulletWrapper.appendChild(button)
+}
 
 new Glide('.glide',{
 type: 'carousel',
@@ -52,19 +86,19 @@ type: 'carousel',
   perView: 3,
   breakpoints: {
     1024: {
-        perView: 2
+        perView: 2,
+
       },
       600: {
-        perView: 1
+        perView: 1,
+        peek: {
+            before: 20,
+            after: 20
+          }
       }
 },
 }).mount();
 
 
+
 // /* glide slider code */
-
-// Splide code //
-
-
-
-// Splide code //
