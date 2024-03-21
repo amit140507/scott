@@ -155,3 +155,8 @@ main {
     margin-right: auto;
     margin-left: auto;
 }
+
+svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
+    width: 15px;
+    height: 15px;
+}

@@ -61,3 +61,10 @@ type: 'carousel',
 }).mount();
 
 
+// /* glide slider code */
+
+// Splide code //
+
+
+
+// Splide code //

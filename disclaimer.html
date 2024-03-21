@@ -1,11 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/images/W-image.png"> -->
+    <!-- <link rel="icon" href="demo_icon.gif" type="image/gif" > -->
+
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon" sizes="144x144" href="letter-s.png" />
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon" sizes="114x114" href="letter-s.png" />
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon" sizes="72x72" href="letter-s.png" />
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon" href="letter-s.png" />
+    <!-- basic favicon -->
+    <link rel="icon" href="assets/images/letter-s.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 600px)" type="text/css"/> -->
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Family Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+        integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
+
+
+    <title>Scott Laider - Home Page</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container-fluid header-contact-info">
+            <div class="header-email"><a href="mailto:info@scottlaidler.com" class="mail">info@scottlaidler.com</a>
+            </div>
+            <div class="header-phone">
+                <a href="tel:+1234567890" class="number">+1234567890</a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-phone"></i></a>
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark"
+            id="navbar">
+
+            <div class="container-fluid">
+                <div class="a">
+                    <a class="navbar-brand header-logo" href="#">
+                        <img src="/assets/images/logo.png" alt="Bootstrap" width="60" height="60">
+                    </a>
+                </div>
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="b collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/plans.html">Plans and Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/transformations.html">Transformations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/get-started.html">Get Started</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- <div class="c">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+              </div> -->
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="disclaimer-page-section">
+            <div class="container">
+                <h1>Disclaimer</h1>
+                <h3>General</h3>
+                <p>Neither Health Forever Limited (nor any of its employees, agents or representatives), is engaged in
+                    rendering medical advice, nor does it (or any of its employees, agents or representatives) hold
+                    itself of out as qualified to do so.
+
+                    We strongly recommend that you seek professional medical advice before embarking on any meal plan or
+                    exercise program. None of our suggestions are to be taken as prescriptive or equivalent to, nor a
+                    replacment for personal medical advice.
+
+                    Any exercise program, even in healthy individuals, carries risk. You have a responsibility to
+                    exercise your own personal judgment, as well as any other considerations, before acting on any of
+                    the content provided by us.</p>
+
+
+
+                <h3>Personal Plans</h3>
+
+                <p>Where we provide you with a suggested meal plan and exercise plan (a “Personal Plan”) the information
+                    contained therein should not be regarded as or relied upon as being a comprehensive health or
+                    exercise program. Accordingly, any actions that you take in relation to a personal plan should not
+                    be pursued regardless or to the exclusion of other information, opinions, or judgments that are
+                    available to you. The plan is intended only as suggestions toward actions that may be taken toward
+                    the achievement of a communicated fitness goal and is in no way prescriptive or diagnostic advice,
+                    this is the realm of a medical professional which is beyond the scope of our service offering.
+
+                    Any Personal Plan will have been prepared on the basis of information provided by you. You are
+                    responsible for the accuracy of any information that you provide to us. You are responsible for
+                    informing us of any health issues or medical conditions when asking us to prepare a Personal Plan.
+
+                    Before taking any action in relation to a Personal Plan, you must take into account any other
+                    factors apart from the Personal Plan of which you are or ought to be aware.
+
+                    For example, we always recommend that you seek professional medical advice before embarking on any
+                    meal or exercise program. Your decisions to engage in any exercise program should take into account
+                    any medical or other professional advice that it available to you as well as using your own personal
+                    judgment as to what activity is safe for you to engage in.
+
+                    The information set out in any Personal Plan may relate to certain contexts and may not be suitable
+                    in other contexts. It is your responsibility to ensure that you do not use the information we
+                    provide in the wrong context.
+
+                    For example, where a program was tailored for a woman who was not pregnant, this would not be
+                    appropriate for her to use after becoming pregnant.</p>
+
+                <h3>Other Information</h3>
+
+                <p>Any information that we provide that does not form part of a Personal Plan, whether obtained through
+                    our website, e-book, video course, social media (such as Facebook, Instagram or Twitter) or
+                    otherwise, is provided for the purposes of general information only.</p>
+
+                <h3>Expected Results</h3>
+
+                <p>While we believe that for most people, following our programs and methods will lead to their desired
+                    results, all exercise programs depend on the individual. Results will be affected by the effort and
+                    commitment of the individual, however in some circumstances even where an individual follows our
+                    program, they may not achieve the desired results. We, therefore, provide no warranties of any kind,
+                    express or implied, as to:
+
+                    the effectiveness of any techniques, meal plans or programs that we deliver; or
+
+                    the results that you may achieve as a result of following our programs.
+
+                    All testimonials contain shown on our website or in our content are real people who have followed
+                    the plans provided by us. For the avoidance of any doubt, however, there they are not indicative of
+                    the results that you are likely to achieve, rather they are included as examples of the results that
+                    particular individuals have achieved.</p>
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#" id="backToTopBtn" class="backToTopBtn">Back to Top ↑</a>
+        <!-- <button class="backToTopBtn">Back to Top ↑</button> -->
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">Success Stories</a>
+                        </li>
+                        <li>
+                            <a href="#">Transformations</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-logo-div">
+                    <a href="index.html" class="footer-logo-a">
+                        <img src="assets/images/logo.png" alt="logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <a href="tel:" class="number">+1234567890</a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@abcfeg.com" class="mail">support@abcfeg.com</a>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="link"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="link"> <i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="copyright-section row">
+                <div class="copyright">
+                    <p><small>© 2024 Scott Laidler All Right Reserved. | <a href="privacy-policy.html">Privacy
+                                Policy</a> | <a href="term-and-conditions.html">Terms and Conditions</a></small></p>
+                </div>
+                <div class="disclaimer">
+                    <p><small>*DISCLAIMER: Results may vary. Results are based on individual circumstances. Timeframes
+                            for results are not guaranteed. Willpower is always required!</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+        integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- custom js link -->
+    <script src="assets/js/custom.js"></script>
 </body>
+<!-- 
+
+
+================================
+Pages
+Easy page
+-disclaimer
+
+Optional
+--Testimonials/reviews
+
+maintanence mode -  https://prnt.sc/8O6btiMsoLin
+=================================
+================================
+TODO
+INDEX
+----------------------------
+faq section
+-----------------------------
+slider section
+add name age and weeks and weight
+------------------------------
+form section 
+------------------------------
+header nav for mobile like morethanmuscle
+------------------------------
+create normalise/ reset css/base css
+------------------------------
+remove bootstrap completely
+=================================
+
+
+https://docs.google.com/spreadsheets/d/1u8ljcp2vWIBawrMjnIImG3EnjGawspve-WZxD5we3fk/edit?usp=sharing
+-->
+
 </html>

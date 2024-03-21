@@ -698,3 +698,8 @@ padding-block:100px;
     }
 }
 /* our services program */
+
+svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
+    width: 15px;
+    height: 15px;
+}
