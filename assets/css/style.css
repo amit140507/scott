@@ -14,7 +14,7 @@
     /* --barlowFont: 'Barlow Condensed', sans-serif; */
 }
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -25,7 +25,6 @@
 html,
 body {
     height: 100%;
-    /* overflow-x: hidden; */
 }
 
 ol,
@@ -64,7 +63,7 @@ body {
     font-weight: 300;
     font-family: var(--mainfont);
     color: var(--black);
-}
+} */
 
 
 
@@ -698,6 +697,12 @@ div.heading h1 {
     background-color: var(--maincolor);
     font-size: 15px;
 }
+@media (max-width :800px) {
+    .container-fluid.header-contact-info {
+        display: none;
+    }
+    
+}
 .header-phone > * {
     margin-inline: 10px;
 }
@@ -758,3 +763,4 @@ svg {
     width: 20px;
     height: 20px;
 }
+

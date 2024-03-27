@@ -1,0 +1,14 @@
+
+
+/* Roots For Color and Fonts */
+
+:root {
+    /* Colors: */
+    --maincolor: lightblue;
+    --secondarycolor: hsl(216, 54%, 58%);
+    --tertiarycolor: #30AAD7;
+    --anchorcolor: cornflowerblue;
+    /* Fonts */
+    --mainfont: 'poppins';
+    --secondaryFont: 'Calibre';
+}
