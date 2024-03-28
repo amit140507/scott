@@ -15,6 +15,11 @@ a.nav-link {font-weight:400;}
     width: 100%;
     z-index: 1;
   }
+  @supports(position: sticky){
+    .header {
+        position: sticky;
+      }
+  }
 .header-logo img {
     vertical-align: middle;
     margin-block: 8px;
