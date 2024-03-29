@@ -90,14 +90,6 @@ a.nav-link {font-weight:400;}
         flex-basis: 100%;
     }
 }
-
-
-main {
-    /* Add padding to the top of the content to prevent it from being hidden behind the header */
-    padding-top: 110px;
-     /* Adjust according to your header's height */
-  }
-
 @media (min-width: 576px) {
 
     .container,
