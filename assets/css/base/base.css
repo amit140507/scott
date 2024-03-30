@@ -15,6 +15,7 @@ html {
     
     /* system-ui,
     'Segoe UI', */
+    IBM Plex Sans,
     Calibre,
     poppins,
     Roboto,
@@ -69,6 +70,27 @@ label {
     margin: 0;
     padding: 0;
 }
+
+/* FROM REMEDY CSS */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.00rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+
+ h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+/* FROM REMEDY CSS */
+
 
 /* Balance text wrapping on headings */
 h1,

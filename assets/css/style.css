@@ -679,16 +679,17 @@ div.home-page-get-started-form form
 
 div.heading h1 {
     text-align: center;
-    font-size: 76px;
-    padding-block: 1em;
+    /* font-size: clamp(3.75rem, 4.5vw, 8rem); */
+    /* padding-block: clamp(3.75rem, 4.5vw, 8rem); */
 }
-.content-t-and-c div h3, .content-privacy-policy div h3{
+/* .content-t-and-c div h3, .content-privacy-policy div h3{
     margin:30px 0px 20px 0px;
-}
+} */
+/*
 .content-t-and-c div p, .content-privacy-policy div p{
     margin:20px 0px;
     text-align: justify;
-}
+} */
 /* t and c */
 
 
