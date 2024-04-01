@@ -15,7 +15,7 @@ html {
     
     /* system-ui,
     'Segoe UI', */
-    IBM Plex Sans,
+    var(--base-font),
     Calibre,
     poppins,
     Roboto,
@@ -29,6 +29,7 @@ html {
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
     /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+    scroll-behavior:smooth;
 }
 
 /* Set core body defaults */
@@ -72,21 +73,47 @@ label {
 }
 
 /* FROM REMEDY CSS */
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.17rem; }
-h4 { font-size: 1.00rem; }
-h5 { font-size: 0.83rem; }
-h6 { font-size: 0.67rem; }
+/* h1 { font-size: 2rem; } */
+h1 {
+    font-size: clamp(2.75rem, 4.5vw, 4rem);
+    font-weight: 600;
+    /* margin-block: clamp(1.75rem, 3vw, 3rem); */
+    margin-block: 0.83em;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block: 0.83em;
+}
 
+h3 {
+    font-size: 1.17rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.00rem;
+}
+
+h5 {
+    font-size: 0.83rem;
+}
+
+h6 {
+    font-size: 0.67rem;
+}
+p{
+    font-size: 1rem;
+    margin-block: 1em;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Edge, Firefox, and Safari.
  */
 
  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    /* font-size: 2em; */
+    font-size: clamp(2.75rem, 4.5vw, 4rem);
   }
   
 /* FROM REMEDY CSS */
