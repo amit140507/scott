@@ -69,6 +69,26 @@ for (i = 0; i < acc.length; i++) {
 }
 // accordion code
 
+// faq page accordion
+
+document.querySelectorAll(".accordion-trigger").forEach((el, i) => {
+  const accordionTrigger = el;
+  console.log("accordionTrigger", accordionTrigger)
+  accordionTrigger.addEventListener("click", (e) => {
+    const accordioncontent = e.target.parentElement.parentElement.querySelector(".accordion-content");
+    const accordionPanelIsOpened = accordionTrigger.getAttribute("aria-expanded");
+    if (accordionPanelIsOpened === "true") {
+      accordionTrigger.setAttribute("aria-expanded", false);
+      accordioncontent.setAttribute("aria-hidden", true);
+    } else {
+      accordionTrigger.setAttribute("aria-expanded", true);
+      accordioncontent.setAttribute("aria-hidden", false);
+    }
+  });
+});
+
+
+// faq page accordion
 
 // /* glide slider code */
 var bulletCount = document.querySelectorAll('.glide__slide').length;
@@ -102,3 +122,4 @@ type: 'carousel',
 
 
 // /* glide slider code */
+

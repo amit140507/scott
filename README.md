@@ -3,11 +3,11 @@
 PENDING
 ===========================================
 ////////////////////////////////
-faq
-about
-plans
-services
-home
+faq --done
+about --done
+plans --done
+services --done
+home --
 ////////////////////////////////
 make a basic version with all working with twenty seventeen theme.
 

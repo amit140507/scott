@@ -103,11 +103,6 @@ h2,
     color: var(--whiteClr);
 } */
 
-a {
-    text-decoration: none;
-    color: cornflowerblue;
-}
-
 /* root */
 
 
@@ -116,15 +111,18 @@ a {
 
 /* header */
 
-/* footer */
+/* footer style */
 
 .copyright {
     text-align: center;
 }
 .footer-logo-img {
-    max-width: 200px;
+    max-width: 15rem;
 }
-/* footer */
+.disclaimer {
+    text-align: center;
+}
+/* footer style */
 
 /* home page start */
 .home-page-welcome-image img{
@@ -307,9 +305,8 @@ flex-basis: 100%;
 section:first-of-type{
     margin-bottom: 40px;
 }
-section:not(:first-of-type){
-    padding-top: 40px;
-    padding-bottom: 40px;
+section + section{
+    margin-block: 50px;
 }
 
 footer {
@@ -391,14 +388,17 @@ h2.faq-heading {
 a.backToTopBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 140px;
     right: 20px;
     background-color: var(--anchorcolor);
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
   }
 
  html {
@@ -449,10 +449,10 @@ left: 95%;
 }
 .slider__bullet {
     background-color: hsla(0, 0%, 45%, 0.5);
-    width: 9px;
-    height: 9px;
+    width: 100%;
+    /* height: 9px; */
     padding: 0;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 2px solid transparent;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -460,7 +460,7 @@ left: 95%;
     line-height: 0;
     -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
     box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
-    margin: 0 0.25em;
+    /* margin: 0 0.25em; */
 }
 .slider__bullet[class*=active] {
     background-color: var(--secondarycolor);
@@ -470,6 +470,7 @@ left: 95%;
 /* plan section*/
 .card-footer {
     text-align: center;
+    margin-block: 2rem;
 }
 .home-page-plan-main-div {
     display: flex;
@@ -669,13 +670,19 @@ div.home-page-get-started-form form
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
+}
+.footer-wrapper div:last-child {
+    text-align: end;
 }
 @media (max-width: 800px) {
     .footer-wrapper {
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .footer-wrapper div:last-child {
+        text-align: center;
     }
   }
 /* t and c */
@@ -823,3 +830,187 @@ section.four0four-section {
 }
 
 /* 404 page */
+
+
+/* about page css */
+.training-philisophy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8%;
+}
+
+.ind-philosophy {
+    flex-basis: 350px;
+    text-align: center;
+}
+
+section.training-philisophy-section div h2 {
+    text-align: center;
+}
+
+section.training-philisophy-section {
+    background-color: var(--fgg);
+}
+
+.ind-philosophy {
+    text-align: center;
+    margin-block: 5%;
+}
+
+.about-intro-section {
+    text-align: center;
+}
+
+.about-intro-section p {
+    margin-block: 30px;
+}
+.ind-philosophy div svg{
+    width:10%;
+    height:10%;
+}
+.about-welcome-image{
+    background-image: url(/assets/images/for-faq.jpg);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: top center;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    .about-welcome-image {
+        height:auto;
+        min-height: 200px;
+    }
+  }
+
+.about-page-profile-image img{
+    max-width: 100%;
+}  
+.about-intro-section{
+    display: flex;
+}
+@media (max-width: 1024px) {
+    .about-intro-section {
+      flex-direction: column;
+    }
+  }
+.about-page-content{
+    margin-inline: 5%;
+    align-self: center;
+}
+
+/* aboutpage css */
+
+
+/* our services page */
+
+
+.ind-services-page{
+    display: flex;
+    align-items: center;
+}
+.ind-services-page:nth-child(even){
+    flex-direction: row-reverse;
+}
+.ind-services-page > div {
+    /*     flex-grow:1; */
+        flex-basis: 100%;
+    }
+.services-image img{
+    height: auto;
+}
+
+.ind-services-page{
+    margin-block:4rem;
+}
+.content-service-page {
+    align-self: center;
+    padding-inline: 3rem;
+}
+.content-service-page  p{
+    word-spacing:4px;
+} 
+.service-welcome-image {
+    background-image: url(/assets/images/for-programs.jpg);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:800px) { 
+    .ind-services-page:nth-child(even){
+        flex-direction: column;
+    }
+    .ind-services-page{
+        flex-direction: column;
+    }
+    .ind-services-page {
+        margin-block: 3rem;
+    }
+    .content-service-page h3 {
+        text-align: center;
+    }
+    .content-service-page {
+        padding-inline: unset;
+    }
+
+}
+
+/* our services page */
+
+/* plans page  */
+.plan-pricing-page-main-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+h1.plan-pricing-page-heading, p.plan-pricing-page-content {
+    text-align: center;
+}
+@media (max-width:800px) {
+    .plan-pricing-page-main-div {
+        flex-direction: column;
+    }
+    
+}
+
+.plans-pricing-welcome-image{
+    background-image: url(/assets/images/for-pricing.jpg);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: top center;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-pricing-page-box{
+    padding: 3%;
+    margin: 3%;
+    border: 1px #d5d5d5 solid;
+    border-radius:10px;
+    text-align: center;
+}
+a.btn {
+    padding:0.75em 1.5em;
+    background-color: var(--clr-tertiary);
+    color: var(--clr-surface);
+    border:1px var(--clr-primary) solid;
+    border-radius: 0.3em;
+    
+}
+a.btn:hover {
+    background-color: var(--clr-surface);
+    color: var(--clr-primary);    
+}
+::marker {
+    color: red;
+    font-size: 1.5em;
+  }
+/* plans page */
