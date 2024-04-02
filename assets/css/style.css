@@ -655,11 +655,14 @@ div.home-page-get-started-form form
 .form-submit-button{
     text-align: center;
 }
-.form-submit-button button{
+.form-submit-button button {
     background: rgb(74, 149, 247);
     border-radius: 10px;
+    border: 0px black solid;
     padding: 10px 50px;
     color: white;
+    cursor: pointer;
+    margin-block: 2rem;
 }
 /* get started section */
 
@@ -799,3 +802,24 @@ svg {
     transform: rotate(315deg);
 }
 /* faq page*/
+
+/* 404 page */
+
+.four0four-content a{
+    color:var(--clr-surface);
+    background-color: var(--clr-tertiary);
+    padding: 10px;
+    border-radius:25px;
+}
+section.four0four-section {
+    text-align:center;
+}
+.four0four-main-image {
+    max-width: 100%;
+    padding-block: 2%;
+}
+.four0four-content p{
+    margin-bottom:20px;
+}
+
+/* 404 page */

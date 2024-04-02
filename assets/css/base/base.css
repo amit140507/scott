@@ -87,7 +87,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.17rem;
+    /* font-size: 1.17rem; */
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 500;
 }
 
@@ -114,6 +115,14 @@ p{
  h1 {
     /* font-size: 2em; */
     font-size: clamp(2.75rem, 4.5vw, 4rem);
+  }
+  h2 {
+    font-size: clamp(1.75rem, 3.5vw, 3rem);
+    font-weight: 500;
+  }
+  h3s {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 500;
   }
   
 /* FROM REMEDY CSS */

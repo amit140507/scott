@@ -2,8 +2,13 @@
 
 PENDING
 ===========================================
-
-
+////////////////////////////////
+faq
+about
+plans
+services
+home
+////////////////////////////////
 make a basic version with all working with twenty seventeen theme.
 
 WORDPRESS
@@ -38,3 +43,21 @@ header nav for mobile like morethanmuscle --
 ==============================================
 
 https://docs.google.com/spreadsheets/d/1u8ljcp2vWIBawrMjnIImG3EnjGawspve-WZxD5we3fk/edit?usp=sharing
+
+
+
+<!-- Contact Form Section -->
+    <!-- 
+Full name
+Contact number
+Age
+Email
+City
+Current weight 
+Target weight  
+Your goal  
+-- What's your goal? (feel healthier, build lean muscle, lose weight etc) 
+-- Let us know your age, your goal, and if you have any existing medical conditions. Please provide as much detail as possible.
+Select plan
+By ticking the box below I agree to have read the privacy policy and consent to the given information being used by More Than Muscle to contact me about their services.
+-->
