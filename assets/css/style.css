@@ -188,8 +188,11 @@ h2.home-page-about-heading {
 }
 ol.home-page-about-benefit li {
     list-style: '✓';
-    font-size: 16px;
+    font-size: 1rem;
 }
+::marker {
+    color: var(--clr-primary);
+  }
 .home-page-about-main-div{
     display: flex;
 }
@@ -245,10 +248,7 @@ ol.home-page-about-benefit li {
 /* succcess stories */
 
 .ind-success-stories {
-    border: 1px rgb(220, 220, 220) solid;
-    /* border-radius: 5%;
-  overflow:hidden;
-  padding-bottom: 5%; */
+    border: 1px var(--clr-primary) solid;
 }
 .ind-success-stories .card-text {
     font-size: 15px;
@@ -265,7 +265,7 @@ ol.home-page-about-benefit li {
     padding-inline: 5%;
     flex-wrap: wrap;
 }
-.client-inmprovement{
+.client-improvement{
 flex-grow: 1;
 flex-basis: 100%;
 }
@@ -274,7 +274,22 @@ flex-basis: 100%;
 
 
 /* keyfigure section */
+.keyfigure-icon-section {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--clr-secondary);
+    border-radius: 100%;
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
 
+.keyfigure-icon-section svg{
+    width: 4rem;
+    position: absolute;
+    top: 2.5em;
+    left: 3em;
+}
 .keyfigure-content-section .plus:after {
     content: '+';
 }
@@ -393,7 +408,7 @@ a.backToTopBtn {
     background-color: var(--anchorcolor);
     color: #fff;
     border: none;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding: 10px;
     cursor: pointer;
     width: 50px;
@@ -422,7 +437,23 @@ a.backToTopBtn:hover {
 
 /* glide slider code */
 .glide__arrow{
-    font-size:3.5rem;
+    background-color: skyblue;
+    color: white;
+    border: 1px #7e7e7e solid;
+    border-radius:5px;
+    padding: 9px 9px 5px 9px;
+}
+.glide__arrow svg{
+    width: 1rem;
+    height:1rem;
+}
+h4.client-name {
+    margin: 1rem 0;
+}
+.client-detail {
+   background-color: hsl(0, 0%, 96%)
+}
+.glide__arrow{
     position: relative;
 }  
 .glide__arrow {
@@ -460,44 +491,14 @@ left: 95%;
     line-height: 0;
     -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
     box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
-    /* margin: 0 0.25em; */
+    margin: 0.25em 0;
 }
 .slider__bullet[class*=active] {
     background-color: var(--secondarycolor);
 }
 /* glide slider code */
 
-/* plan section*/
-.card-footer {
-    text-align: center;
-    margin-block: 2rem;
-}
-.home-page-plan-main-div {
-    display: flex;
-    justify-content: space-around;
-}
-.home-page-plan-box {
-    padding: 15px;
-    margin-block: 5%;
-    border: 1px #d5d5d5 solid;
-    border-radius:10px;
-}
-h3.card-title.home-page-plan-name {
-    text-align: center;
-    padding-top: 40px;
-}
-.home-page-plan-box .card-footer{
-    margin-block: 5%;
-}
-@media (max-width:800px) {
-    .home-page-plan-main-div {
-        flex-direction: column;
-    }
-    .home-page-plan-box {
-        margin-block: 5%;
-    }
-}
-/* plan section*/
+
 
 
 #navbar .navbar-nav .nav-link {
@@ -510,27 +511,26 @@ p.card-text {
 }
 
 /* How can i Help */
-.home-page-how-can-i-help-main-div{
+ .home-page-how-can-i-help-main-div{
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .home-page-how-can-i-help-card{
     flex: 40%;
     border-radius: 10px;
     border: 1px #e7e7e7  solid;
-    padding: 3%;
+    padding: 1%;
     margin:1%
 }
 .home-page-how-can-i-help-card-img {
-    width:10%;
-    height: auto;
+    width:7rem;
+    object-fit: contain;
+    margin-inline: auto;
 }
 .home-page-how-can-i-help-card {
     text-align: center;
-}
-.home-page-how-can-i-help div.card-body{
-    height: 200px;
 }
 @media (max-width:800px) {
     .home-page-how-can-i-help-main-div{
@@ -539,7 +539,7 @@ p.card-text {
     .home-page-how-can-i-help-card{
         flex: 50%;
     }
-}
+} 
 /* How can i Help */
 
 
@@ -549,7 +549,7 @@ p.card-text {
 /* step section */
 
 .home-page-step-number {
-    font-size: 200px;
+    font-size: 10rem;
 }
 .home-page-steps {
     height:50vh;
@@ -772,10 +772,7 @@ svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
     width: 15px;
     height: 15px;
 }
-svg {
-    width: 20px;
-    height: 20px;
-}
+
 
 
 
@@ -965,8 +962,9 @@ section.training-philisophy-section {
 
 /* our services page */
 
+
 /* plans page  */
-.plan-pricing-page-main-div {
+.plan-pricing-page-main-div, .home-page-plan-main-div {
     display: flex;
     justify-content: space-evenly;
 }
@@ -974,7 +972,7 @@ h1.plan-pricing-page-heading, p.plan-pricing-page-content {
     text-align: center;
 }
 @media (max-width:800px) {
-    .plan-pricing-page-main-div {
+    .plan-pricing-page-main-div, .home-page-plan-main-div{
         flex-direction: column;
     }
     
@@ -990,7 +988,7 @@ h1.plan-pricing-page-heading, p.plan-pricing-page-content {
     justify-content: center;
     align-items: center;
 }
-.plan-pricing-page-box{
+.plan-pricing-page-box, .home-page-plan-box{
     padding: 3%;
     margin: 3%;
     border: 1px #d5d5d5 solid;
@@ -1009,8 +1007,7 @@ a.btn:hover {
     background-color: var(--clr-surface);
     color: var(--clr-primary);    
 }
-::marker {
-    color: red;
-    font-size: 1.5em;
-  }
+.card-footer {
+    margin-block: 2rem;
+}
 /* plans page */

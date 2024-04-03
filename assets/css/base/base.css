@@ -238,3 +238,9 @@ hr {
 	height: 0; /* 1 */
 	color: inherit; /* 2 */
 }
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    }
