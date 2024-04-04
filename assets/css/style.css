@@ -147,7 +147,9 @@ h2,
 .home-page-welcome-learn-more {
     text-transform: uppercase;
 }
-
+p.home-page-intro {
+        width: min(96vw, 30rem);
+    }
 p.home-page-work-with-you {
     text-transform: uppercase;
 }
@@ -176,10 +178,6 @@ p.home-page-work-with-you {
 h2.home-page-about-heading {
     font-size: 40px;
     padding-bottom: 40px;
-}
-.home-page-about-content div > p {
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 ol.home-page-about-benefit li {
     list-style: '✓';
@@ -219,18 +217,26 @@ ol.home-page-about-benefit li {
     }
 .home-page-why-us-main-div, .home-page-why-us-content-card{
     display: flex;
+    justify-content: space-evenly;
 }
 .home-page-why-us-main-div > *{
     flex:1;
 }
 .home-page-why-us-image img{
     max-width: 100%;
+    object-fit: cover;
+    height: 96%;
+    width: 96%;
+    border-radius: 2rem;
+    margin-inline: auto;
 }
 .home-page-why-us-content-card{
     flex-wrap: wrap;
 }
 .home-page-why-us-ind-content-card{
-    flex: 40%;
+    flex-grow: 0;
+    flex-basis: 48%;
+    /* flex: 40%; */
 }
 @media (max-width:800px) {
     .home-page-why-us-main-div,.home-page-why-us-content-card{
@@ -501,7 +507,9 @@ left: 95%;
 }
 
 p.card-text {
-    margin: 0px 0px 20px;
+    margin-bottom: 1.5rem;
+}
+.card-body {
     text-align: center;
 }
 
@@ -756,6 +764,13 @@ text-align:center;
 .ind-services{
     flex: 1;
 }
+.services-image svg {
+    max-width:20%;
+}
+.ind-services {
+   margin-bottom:2rem;
+}
+
 @media (max-width:800px) {
     .services{
         flex-direction: column;
