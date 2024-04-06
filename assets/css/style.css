@@ -437,7 +437,7 @@ h2.faq-heading {
     display: none;
 }
 /* faq section */
-
+a:focus {outline:none;}
 
 
 a.backToTopBtn {
@@ -459,7 +459,7 @@ a.backToTopBtn {
  html {
     scroll-behavior: smooth;
   }
-a.backToTopBtn:hover {
+a.backToTopBtn:hover,a.backToTopBtn:active {
     background-color: var(--secondarycolor);
 }
 
@@ -756,6 +756,8 @@ li.nav-item:last-child {
     background-color:var(--tertiarycolor);
     border-radius:10px;
     padding-inline:10px;
+    width: 100%;
+    text-align: center;
 }
 
 /* transformations page */

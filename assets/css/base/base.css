@@ -244,3 +244,6 @@ button {
     background: none;
     cursor: pointer;
     }
+a, button{
+    -webkit-tap-highlight-color: transparent;
+}
