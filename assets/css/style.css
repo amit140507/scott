@@ -112,7 +112,9 @@ h2,
 /* header */
 
 /* footer style */
-
+footer {
+    background-color: var(--maincolor);
+}
 .copyright {
     text-align: center;
 }
@@ -122,6 +124,45 @@ h2,
 .disclaimer {
     text-align: center;
 }
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-wrapper{
+padding-block: 5rem;
+}
+.footer-wrapper div:last-child {
+    text-align: end;
+}
+.footer-wrapper div ul li {
+    margin-block:0.75rem;
+}
+.social-links{
+    padding-top:1.5rem;
+}
+.social-links a.link svg {
+    margin-left: 1rem;
+    width: 1.5rem;
+    height:1.5rem;
+}
+@media (max-width: 800px) {
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-wrapper div:last-child {
+        text-align: center;
+    }
+    .footer-logo-div {
+  order: -1;
+}
+.footer-wrapper div:first-child{
+    padding-block:3rem;
+}
+  }
+
 /* footer style */
 
 /* home page start */
@@ -326,10 +367,7 @@ section + section{
     margin-block: 50px;
 }
 
-footer {
-    padding-top: 80px;
-    background-color: var(--maincolor);
-}
+
 /* faq section */
 .faq-row {
     padding-top: 20px;
@@ -410,7 +448,7 @@ a.backToTopBtn {
     background-color: var(--anchorcolor);
     color: #fff;
     border: none;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     padding: 10px;
     cursor: pointer;
     width: 50px;
@@ -424,15 +462,7 @@ a.backToTopBtn {
 a.backToTopBtn:hover {
     background-color: var(--secondarycolor);
 }
-.social-links{
-    padding-top:20px;
-}
-.copyright-section.row {
-    padding-top: 20px;
-}
-.social-links a.link {
-    margin-inline: 5px;
-}
+
 
 /* home page start */
 
@@ -555,75 +585,10 @@ p.card-text {
 }
 /* step section */
 
-/* .home-page-step-number {
-    font-size: 10rem;
-}
-.home-page-steps {
-    height:50vh;
-    display:flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-.home-page-steps > * {
-    flex: 33%;
-}
-.home-page-step-one {
-    align-self:start;
-}
-.home-page-step-two {
-    align-self:center;
-}
-.home-page-step-three {
-    align-self:end;
-}
-.home-page-arrow-one img,
-.home-page-arrow-two img {
-    width: 10%;
-} 
-.home-page-arrow-one, .home-page-arrow-two {
-    position: absolute;
-} 
-.home-page-arrow-one {
-    top:30%;
-    left:30%
-} 
-.home-page-arrow-two {
-    top:66%;
-    left:60%
-} 
-@media (max-width:800px) {
-    .home-page-steps {
-        flex-direction: column;
-    }
-    .home-page-steps > * {
-        align-self: unset;
-        flex: 100%;
-        text-align: center;
-        border: 1px rgb(197, 197, 197) solid;
-        border-radius: 10px;
-        padding-block: 6%;
-    
-    }
-    .home-page-step-number {
-        font-size: 50px;
-    }
-    .home-page-arrow-one, .home-page-arrow-two {
-        position: unset;
-        transform: rotate(45deg);
-        border: unset;
-    } 
-    .home-page-arrow-one img, .home-page-arrow-two img{
-        display: inline-block;
-    }
-}  */
-/* step section */
-
 .home-page-step-number {
     font-size: 10rem;
 }
-.home-page-step{
-    border: 1px lightgrey solid;
-}
+
 .home-page-step {
     position: relative;
 }
@@ -635,11 +600,13 @@ p.card-text {
 .home-page-steps {
     height:60vh;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
 }
-.home-page-steps > * {
-    flex: 33%;
+.home-page-steps > .home-page-step  {
+    /* flex: 33%; */
+    flex-grow: 0;
+    flex-basis: 30%;
 }
 .home-page-step-one {
     align-self:start;
@@ -663,7 +630,7 @@ p.card-text {
 } 
 .home-page-arrow-two {
     top:71%;
-    left:61%
+    left:65%
 }
 
 @media (max-width:800px) {
@@ -682,9 +649,14 @@ p.card-text {
 .home-page-arrow-two img {
     width: 100%;
 } 
+.home-page-step{
+    border: 1px lightgrey solid;
+    text-align: center;
+}
 }
 
 
+/* step section */
 
 
 
@@ -745,24 +717,7 @@ div.home-page-get-started-form form
 }
 /* get started section */
 
-.footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-.footer-wrapper div:last-child {
-    text-align: end;
-}
-@media (max-width: 800px) {
-    .footer-wrapper {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .footer-wrapper div:last-child {
-        text-align: center;
-    }
-  }
+
 /* t and c */
 
 div.heading h1 {
@@ -796,9 +751,7 @@ div.heading h1 {
 .header-phone > * {
     margin-inline: 10px;
 }
-.footer-wrapper div ul li {
-    margin-block:10px;
-}
+
 li.nav-item:last-child {
     background-color:var(--tertiarycolor);
     border-radius:10px;
