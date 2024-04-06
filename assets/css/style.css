@@ -437,7 +437,6 @@ h2.faq-heading {
     display: none;
 }
 /* faq section */
-a:focus {outline:none;}
 
 
 a.backToTopBtn {
@@ -756,8 +755,12 @@ li.nav-item:last-child {
     background-color:var(--tertiarycolor);
     border-radius:10px;
     padding-inline:10px;
+}
+@media (max-width:992px) {
+    li.nav-item:last-child {
     width: 100%;
     text-align: center;
+}
 }
 
 /* transformations page */
