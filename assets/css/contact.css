@@ -80,7 +80,7 @@ label.form-label {
     appearance: none;
     background-color: var(--clr-surface);
     background-clip: padding-box;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--clr-grey);
     border-radius: 0.375rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     

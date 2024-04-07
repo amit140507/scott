@@ -106,7 +106,7 @@ h6 {
 }
 p{
     font-size: 1rem;
-    margin-block: 1em;
+    padding-block: 1em;
 }
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -168,11 +168,7 @@ select {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--clr-tertiary);
 }
-
-
-
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
@@ -246,4 +242,44 @@ button {
     }
 a, button{
     -webkit-tap-highlight-color: transparent;
+}
+/* backrgound color and color for all elements */
+header{
+    background-color: var(--clr-secondary);
+}
+a.anchor{
+    color: var(--clr-tertiary);
+}
+a.anchor:hover{
+    color: var(--clr-primary);
+}
+a.anchor:focus{
+    color: var(--clr-secondary);
+}
+footer{
+    background-color: var(--clr-secondary);
+}
+.btn {
+    padding:0.75em 1.5em;
+    background-color: var(--clr-tertiary);
+    color: var(--clr-surface);
+    border:1px var(--clr-primary) solid;
+    border-radius: 0.3em;
+    
+}
+.btn:hover {
+    background-color: var(--clr-surface);
+    color: var(--clr-primary);    
+}
+.btn-type-2 {
+    padding:0.75em 1.5em;
+    background-color: var(--clr-surface);
+    color: var(--clr-tertiary);
+    border:1px var(--clr-primary) solid;
+    border-radius: 0.3em;
+    
+}
+.btn-type-2:hover {
+    background-color: var(--clr-primary); 
+    color:     var(--clr-surface);
 }
