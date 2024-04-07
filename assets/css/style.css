@@ -274,10 +274,8 @@ h2.faq-heading {
     text-align:center;
 }
 .single-accordion-item {
-    border: 1px rgb(233, 233, 233) solid;
     margin: 1rem;
-
-    box-shadow: 0px 0px 10px 1px  var(--maincolor);
+    box-shadow: 0px 0px 3px 1px var(--clr-primary);
 }
 
 .single-accordion-button {
@@ -291,6 +289,7 @@ h2.faq-heading {
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
+    color: var(--clr-primary);
 }
 .single-accordion-button:after {
     flex-shrink: 0;
@@ -402,7 +401,7 @@ left: 95%;
     list-style: none;
 }
 .slider__bullet {
-    background-color: hsla(0, 0%, 45%, 0.5);
+    background-color: var(--clr-grey);
     width: 100%;
     /* height: 9px; */
     padding: 0;
@@ -412,12 +411,12 @@ left: 95%;
     transition: all .3s ease-in-out;
     cursor: pointer;
     line-height: 0;
-    -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
+    /* -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1); */
+    /* box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1); */
     margin: 0.25em 0;
 }
 .slider__bullet[class*=active] {
-    background-color: var(--secondarycolor);
+    background-color: var(--clr-tertiary);
 }
 /* glide slider code */
 
@@ -1027,6 +1026,10 @@ label.form-label {
   [type=button]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
+.single-accordion-button:not(.collapsed){
+    background-color: var(--clr-secondary);
+    color: var(--clr-surface);
+    }
 .accordion-content {
     padding: 0rem 1.25rem;
 }

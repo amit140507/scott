@@ -4,8 +4,12 @@
     margin:5px 10px;
 }
 
-a.nav-link {font-weight:400;}
-
+a.nav-link {
+    font-weight:500;
+}
+/* a.nav-link:hover, a.nav-link:active {
+    transform: translate(-2.1rem, -2ex);
+} */
 .header {
     position: sticky;
     top: 0;

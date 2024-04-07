@@ -273,13 +273,13 @@ footer{
 }
 .btn-type-2 {
     padding:0.75em 1.5em;
-    background-color: var(--clr-surface);
-    color: var(--clr-tertiary);
+    background-color: var(--clr-primary);
+    color: var(--clr-surface);
     border:1px var(--clr-primary) solid;
     border-radius: 0.3em;
     
 }
 .btn-type-2:hover {
-    background-color: var(--clr-primary); 
-    color:     var(--clr-surface);
+    background-color: var(--clr-surface); 
+    color:     var(--clr-primary);
 }
