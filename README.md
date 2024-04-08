@@ -3,9 +3,8 @@
 PENDING
 ===========================================
 ////////////////////////////////
-success stories cards
-grey color universal
-faq transition
+success stories cards -- done
+faq transition --
 mobile nav transition
 mobile nav hamburger
 

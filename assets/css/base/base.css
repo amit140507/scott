@@ -349,3 +349,11 @@ a.anchor:hover, a.anchor:focus{
     color: var(--clr-surface);
     background:var(--clr-primary);
   }
+  /* svg {
+    fill: currentColor;
+    color: var(--clr-tertiary);
+  }
+    
+  svg:hover {
+    color: darkblue;
+  } */
