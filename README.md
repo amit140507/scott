@@ -3,11 +3,12 @@
 PENDING
 ===========================================
 ////////////////////////////////
-faq --done
-about --done
-plans --done
-services --done
-home --
+success stories cards
+grey color universal
+faq transition
+mobile nav transition
+mobile nav hamburger
+
 ////////////////////////////////
 make a basic version with all working with twenty seventeen theme.
 
