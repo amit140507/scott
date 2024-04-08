@@ -244,20 +244,29 @@ a, button{
     -webkit-tap-highlight-color: transparent;
 }
 /* backrgound color and color for all elements */
+
 header{
     background-color: var(--clr-secondary);
 }
+footer{
+    background-color: var(--clr-secondary);
+}
+
 a.anchor{
     color: var(--clr-tertiary);
 }
-a.anchor:hover{
+a.anchor:hover, a.anchor:focus{
     color: var(--clr-primary);
 }
-a.anchor:focus{
-    color: var(--clr-secondary);
+.header {
+    a {
+         color: var(--clr-surface);
+} 
 }
-footer{
-    background-color: var(--clr-secondary);
+.footer{
+    a{
+        color: var(--clr-surface);
+    }
 }
 .btn {
     padding:0.75em 1.5em;
