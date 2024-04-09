@@ -2,6 +2,7 @@
 
 :root {
     /* Colors: */
+    --clr-white: hsl(0, 0%, 100%);
     --clr-grey: hsl(0, 0%, 91%);
     --clr-lightgrey: hsl(0, 0%, 97%);
     --clr-text: hsl(204, 100%, 1%);
@@ -22,9 +23,22 @@
     --font-size-800: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
 }
 
+
+/* body */
+
+
 /* body{
     background-color: var(--clr-surface);
 } */
+body:has(.show){
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* body */
+
+
+
 /* header */
 
 .navbar-nav li{
@@ -73,11 +87,12 @@ a.nav-link {
     outline: 0;
     /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
 }
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 .collapse:not(.show) {
     display: none;
 }
-}
+} */
+/* simple hamburger  */
 
 /* .navbar-toggler-icon {
     display: inline-block;
@@ -91,43 +106,49 @@ a.nav-link {
 }
 .navbar-toggler-icon.show {
         background-image: url(/assets/images/hamburger-close.svg);
-    } */
-    .hamburger {
-        display: block;
-        position: relative;
-      }
-      
-      .hamburger,
-      .hamburger::before,
-      .hamburger::after {
-        width: 2em;
-        height: 3px;
-        background:  black;
-        
-        transition: transform 350ms ease-in-out, opacity 200ms linear;
-      }
-      
-      .hamburger::before,
-      .hamburger::after {
-        content: '';
-        position: absolute;
-        left: 0;
-      }
-      
-      .hamburger::before { bottom: 6px; }
-      .hamburger::after { top: 6px;}
-      
-      .hamburger.show {
-        transform: rotate(45deg);
-      }
-      
-      .hamburger.show::before {
-        opacity: 0;
-      }
-      
-      .hamburger.show::after {
-        transform: rotate(90deg) translate(-6px);
-      }    
+} */
+
+/* simple hamburger  */
+
+/* advance hamburger */
+
+.hamburger {
+    display: block;
+    position: relative;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+    width: 2em;
+    height: 3px;
+    background:  black;
+    transition: transform 350ms ease-in-out, opacity 200ms linear;
+    }
+    .hamburger::before,
+    .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    }
+    .hamburger::before { 
+        bottom: 8px; 
+    }
+    .hamburger::after {
+         top: 8px;
+    }
+    .hamburger.show {
+    transform: rotate(45deg);
+    }
+    .hamburger.show::before {
+    opacity: 0;
+    }
+    
+    .hamburger.show::after {
+    transform: rotate(90deg) translate(-8px);
+    }    
+
+
+/* advance hamburger */
 
 .navbar .container-fluid{
     display: flex;
@@ -148,10 +169,31 @@ a.nav-link {
     display: flex;
     justify-content: space-between;
     padding-block: 5px;
-    border-bottom: 1px white solid;
+    border-bottom: 1px var(--clr-white) solid;
     font-size: 15px;
 }
 @media (max-width :800px) {
+    .navbar-collapse.show .navbar-nav{
+        
+        transform:translatey(0);
+        }
+        .navbar-collapse .navbar-nav{
+            
+            transform:translatey(20px);
+            
+            transition: transform 600ms cubic-bezier(.4,0,.2,1);
+        }
+        .collapse:has(.show) {
+            visibility: visible;
+            opacity: 1;
+            max-height: 1000px;
+        }
+        .collapse:not(.show) {
+            visibility: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 600ms ease-in-out;
+        }
     .container-fluid.header-contact-info {
         display: none;
     }
@@ -173,7 +215,8 @@ li.nav-item:last-child:hover {
     li.nav-item:last-child {
     width: 100%;
     text-align: center;
-    margin-block: 20vh;
+    margin-top: 15vh;
+    margin-bottom: 36vh;
 }
     /* button#navbar-toggler {
         border: 1px black solid;
@@ -182,7 +225,7 @@ li.nav-item:last-child:hover {
     .navbar-nav {
         flex-direction: column;
         justify-content:flex-end;
-        align-items:self-start;
+        align-items:center;
         width: 100%;
         margin-top: 10vh;
         text-align: center;
@@ -194,7 +237,7 @@ li.nav-item:last-child:hover {
         flex-basis: 100%;
     }
     ul.navbar-nav li:not(:last-child) {
-        /* border-bottom:1px white solid; */
+        /* border-bottom:1px var(--clr-white) solid; */
         width: 100%;
     }
 }
@@ -343,9 +386,6 @@ padding-block: 5rem;
 .home-page-welcome-learn-more {
     text-transform: uppercase;
 }
-p.home-page-intro {
-        width: min(96vw, 30rem);
-    }
 p.home-page-work-with-you {
     text-transform: uppercase;
 }
@@ -627,7 +667,7 @@ a.backToTopBtn:hover,a.backToTopBtn:active {
 /* glide slider code */
 .glide__arrow{
     background-color: var(--clr-secondary);
-    color: white;
+    color: var(--clr-white);
     border: 1px #7e7e7e solid;
     border-radius:5px;
     padding: 9px 9px 5px 9px;
@@ -847,10 +887,10 @@ div.home-page-get-started-form form
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: white;
+    color: var(--clr-white);
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: white;
+    background-color: var(--clr-white);
     background-clip: padding-box;
     appearance: none;
     border: 1px var(--clr-grey) solid;
@@ -958,7 +998,7 @@ svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
 }
 .heading-faq h1{
     text-align: center;
-    color: white;
+    color: var(--clr-white);
 }
 .content-faq{
     padding: 50px 0px;
@@ -1164,7 +1204,7 @@ h1.plan-pricing-page-heading, p.plan-pricing-page-content {
 /* contact page */
 
 h1.contact-us-heading {
-    color: white;
+    color: var(--clr-white);
 }
 
 .heading-contact-us {
@@ -1287,7 +1327,7 @@ label.form-label {
 }
 .heading-faq h1{
     text-align: center;
-    color: white;
+    color: var(--clr-white);
 }
 .content-faq{
     padding: 50px 0px;
@@ -1329,7 +1369,7 @@ label.form-label {
     font-size: 1rem;
     text-align: left;
     color: black;
-    background-color: white;
+    background-color: var(--clr-white);
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
@@ -1374,14 +1414,14 @@ flex-grow: 0;
 .get-started-contact-details ul li:nth-child(3) a{
     border-radius: 5px;
     background-color:#25d366;
-    color: white;
+    color: var(--clr-white);
     padding:10px;
     font-weight: 500;
 }
 .get-started-contact-details ul li:nth-child(4) a{
     border-radius: 5px;
     background: linear-gradient(0.25turn,#f9ce34, #ee2a7b, #6228d7);
-    color: white;
+    color: var(--clr-white);
     padding:10px;
     opacity: 80%;
     font-weight: 500;

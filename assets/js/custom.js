@@ -39,8 +39,10 @@ if (navtoggler) {
     navtoggler.addEventListener("click", function () {
         var navbarcollapse = document.getElementById("navbar-collapse");
         var navbartogglericon = document.getElementById("navbar-toggler-icon");
+        var body = document.querySelector("body");
         navbarcollapse.classList.toggle("show");
         navbartogglericon.classList.toggle("show");
+        body.classList.toggle("show");
     });
 }
 

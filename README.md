@@ -1,15 +1,19 @@
 # scott
 
 PENDING
-===========================================
-////////////////////////////////
-success stories cards -- done
-faq transition --
-mobile nav transition
-mobile nav hamburger
+=================================================================
+<!-- mobile nav transition  -->
+<!-- mobile nav hamburger  -->
+<!-- no scroll on mobile nav  -->
+<!-- color white  -->
+margin and padding and proper font sizes for heading tags 
 
-////////////////////////////////
-make a basic version with all working with twenty seventeen theme.
+add placeholder image in above the fold
+faq transition --
+
+
+=================================================================
+ -- make a basic version with all working with twenty seventeen theme.
 
 WORDPRESS
 
@@ -22,25 +26,10 @@ create your own theme using underscore
 -- base css for everything.
  create systemetic css for very component.
 
+=================================================================
 
 
-https://65fa1ed5a552c70008ce545e--scott140507.netlify.app/get-started 
-
-
-===========================================
-INDEX
-----------------------------
-faq section -- DONE
------------------------------
-slider section -- DONE
-add name age and weeks and weight
-------------------------------
-form section -- done
-------------------------------
-create normalise/ reset css/base css // remove bootstrap completely -- done
-------------------------------
-header nav for mobile like morethanmuscle -- 
-==============================================
+https://65fa1ed5a552c70008ce545e--scott140507.netlify.app/get-started
 
 https://docs.google.com/spreadsheets/d/1u8ljcp2vWIBawrMjnIImG3EnjGawspve-WZxD5we3fk/edit?usp=sharing
 
