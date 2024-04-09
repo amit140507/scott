@@ -173,9 +173,8 @@ li.nav-item:last-child:hover {
     li.nav-item:last-child {
     width: 100%;
     text-align: center;
+    margin-block: 20vh;
 }
-}
-@media (max-width: 992px) {
     /* button#navbar-toggler {
         border: 1px black solid;
         padding: 5px 9px;
@@ -185,13 +184,17 @@ li.nav-item:last-child:hover {
         justify-content:flex-end;
         align-items:self-start;
         width: 100%;
+        margin-top: 10vh;
+        text-align: center;
+        text-decoration: none;
+        border: unset;
     }
     .navbar-collapse{
         flex-grow: 1;
         flex-basis: 100%;
     }
     ul.navbar-nav li:not(:last-child) {
-        border-bottom:1px white solid;
+        /* border-bottom:1px white solid; */
         width: 100%;
     }
 }
