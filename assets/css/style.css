@@ -199,6 +199,19 @@ a.nav-link {
     }
     
 }
+@media (max-width :1000px) {
+.collapse:has(.show) {
+    visibility: visible;
+    opacity: 1;
+    max-height: 1000px;
+}
+.collapse:not(.show) {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 600ms ease-in-out;
+}
+}
 .header-phone > * {
     margin-inline: 10px;
 }
