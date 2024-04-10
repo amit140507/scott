@@ -354,8 +354,15 @@ svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
     width: 15px;
     height: 15px;
 }
-
-
+/* @media (max-width: 800px) {
+    .home-page-welcome-section {
+    height:70vh;
+    background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+} */
 /* header */
 
 /* footer style */
