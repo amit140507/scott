@@ -40,9 +40,11 @@ if (navtoggler) {
         var navbarcollapse = document.getElementById("navbar-collapse");
         var navbartogglericon = document.getElementById("navbar-toggler-icon");
         var body = document.querySelector("body");
+        var navbar = document.querySelector(".navbar");
         navbarcollapse.classList.toggle("show");
         navbartogglericon.classList.toggle("show");
         body.classList.toggle("show");
+        navbar.classList.toggle("show");
     });
 }
 

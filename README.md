@@ -2,16 +2,20 @@
 
 PENDING
 =================================================================
-<!-- mobile nav transition  -->
-<!-- mobile nav hamburger  -->
-<!-- no scroll on mobile nav  -->
-<!-- color white  -->
-margin and padding and proper font sizes for heading tags 
+margin and padding and proper font sizes for heading tags
+content change.
 
-add placeholder image in above the fold
+
+
+nav mobile from side.
 faq transition --
+nav-menu trantion - https://www.stacylelfitness.com/
+add transition to back to top button -- https://www.drshalinisdiet.com/
+nav bar  - https://www.saints-stars.com/
 
 
+
+// add placeholder image in above the fold
 =================================================================
  -- make a basic version with all working with twenty seventeen theme.
 

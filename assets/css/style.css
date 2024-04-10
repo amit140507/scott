@@ -172,12 +172,39 @@ a.nav-link {
     border-bottom: 1px var(--clr-white) solid;
     font-size: 15px;
 }
+a.mobile-header-logo {
+    display: none;
+}
 @media (max-width :800px) {
-    .navbar-collapse.show .navbar-nav{
+    button#navbar-toggler {
+        padding: 1.25em 0.67em;
+        border-radius: 0.3em;
+    }
+    div#navbar-collapse {
+position:relative;
+flex-direction: column;
+}
+a.mobile-header-logo {
+    display: block;
+    font-size: 2rem;
+    color: var(--clr-white);
+}
+div#navbar-collapse::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image: url(/assets/images/logo.png);
+    background-position: top 15vh center;
+    background-repeat: no-repeat;
+    background-size: min(400px, 100%);
+    opacity: 10%;
+    z-index: -1;
+}
+    .navbar-collapse.show{
         
         transform:translatey(0);
         }
-        .navbar-collapse .navbar-nav{
+        .navbar-collapse{
             
             transform:translatey(20px);
             
@@ -186,13 +213,18 @@ a.nav-link {
         .collapse:has(.show) {
             visibility: visible;
             opacity: 1;
-            max-height: 1000px;
         }
         .collapse:not(.show) {
             visibility: hidden;
             opacity: 0;
-            max-height: 0;
             transition: opacity 600ms ease-in-out;
+        }
+        .navbar:has(.show) {
+            max-height: 100vh;
+            transition: max-height 300ms ease-in-out;
+        }
+        .navbar:not(.show) {
+            max-height: inherit;
         }
     .container-fluid.header-contact-info {
         display: none;
@@ -204,6 +236,7 @@ a.nav-link {
     visibility: visible;
     opacity: 1;
     max-height: 1000px;
+    /* max-height: 100vh; */
 }
 .collapse:not(.show) {
     visibility: hidden;
