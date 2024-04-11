@@ -21,6 +21,26 @@
     --font-size-600: clamp(1.944rem, 1.771rem + 0.8651vi, 2.4414rem);
     --font-size-700: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
     --font-size-800: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
+
+    /* Step -1: 15px → 16px */
+    --step--1: clamp(0.9375rem, 0.925rem + 0.0625vi, 1rem);
+    /* Step 0: 18px → 20px */
+    --step-0: clamp(1.125rem, 1.1rem + 0.125vi, 1.25rem);
+    /* Step 1: 21.6px → 25px */
+    --step-1: clamp(1.35rem, 1.3075rem + 0.2125vi, 1.5625rem);
+    /* Step 2: 25.92px → 31.25px */
+    --step-2: clamp(1.62rem, 1.5534rem + 0.3331vi, 1.9531rem);
+    /* Step 3: 31.104px → 39.0625px */
+    --step-3: clamp(1.944rem, 1.8445rem + 0.4974vi, 2.4414rem);
+    /* Step 4: 37.3248px → 48.8281px */
+    --step-4: clamp(2.3328rem, 2.189rem + 0.719vi, 3.0518rem);
+    /* Step 5: 44.7898px → 61.0352px */
+    --step-5: clamp(2.7994rem, 2.5963rem + 1.0153vi, 3.8147rem);
+
+    /* clamp calc */
+    --fluid-16-48: clamp(1rem, 0.6rem + 2vi, 3rem);
+
+    --fluid-16-16: clamp(1rem, 1rem + 0vi, 1rem);
 }
 
 

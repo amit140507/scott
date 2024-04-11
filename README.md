@@ -2,15 +2,37 @@
 
 PENDING
 =================================================================
+add new section.
+
+about page--
+ add stats in about page and add more content in top section and make image slihgtly small
+content change. add content paragraph in header image.(https://liftsociety.com/about-us/) -- sarah
+header image make it work for all devices. add social icons.
+
+
+--contact us 
+
+
+
+
+
+
+change pixel with rem/em.
+border color.
 margin and padding and proper font sizes for heading tags
-content change.
+media queries.
+add transition to back to top button -- https://www.drshalinisdiet.com/
 
 
+
+
+
+write responsive with no media queries
 
 nav mobile from side.
 faq transition --
 nav-menu trantion - https://www.stacylelfitness.com/
-add transition to back to top button -- https://www.drshalinisdiet.com/
+
 nav bar  - https://www.saints-stars.com/
 
 
