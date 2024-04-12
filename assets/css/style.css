@@ -374,15 +374,24 @@ svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
     width: 15px;
     height: 15px;
 }
-/* @media (max-width: 800px) {
-    .home-page-welcome-section {
-    height:70vh;
+@media (max-width: 800px) {
+    .home-page-welcome-section{
+        position: relative;
+        color: white;
+    }
+    .home-page-welcome-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
     background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+
 }
-} */
+}
 /* header */
 
 /* footer style */

@@ -2,9 +2,15 @@
 
 PENDING
 =================================================================
-add new section.
+add new section to pages.
+update content in all the pages.
+margin and padding and proper font sizes for heading tags.
+change pixel with rem/em.
+border color.
 
-about page--
+
+
+--about page
  add stats in about page and add more content in top section and make image slihgtly small
 content change. add content paragraph in header image.(https://liftsociety.com/about-us/) -- sarah
 header image make it work for all devices. add social icons.
@@ -17,23 +23,15 @@ header image make it work for all devices. add social icons.
 
 
 
-change pixel with rem/em.
-border color.
-margin and padding and proper font sizes for heading tags
+
 media queries.
 add transition to back to top button -- https://www.drshalinisdiet.com/
 
-
-
-
-
 write responsive with no media queries
 
-nav mobile from side.
 faq transition --
 nav-menu trantion - https://www.stacylelfitness.com/
-
-nav bar  - https://www.saints-stars.com/
+nav mobile from side  - https://www.saints-stars.com/
 
 
 
