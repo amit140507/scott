@@ -59,6 +59,8 @@ ready to look better, feel better and perform at your very best?
 -- faq
 form referneces
 https://mywowfit.com/faq
+
+
 --privacy policy
 
 
@@ -117,13 +119,15 @@ This Privacy Policy applies only to our online activities and is valid for visit
 CONSENT
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.
 
--- terms and conditions
+-- terms and conditions --
 
 
 
--- dislaimer
-last updated
-
+-- dislaimer --done
+ADD last updated
+https://modestmusclemvmt.com/disclaimer/
+https://scottlaidler.com/disclaimer/
+https://primal7movement.com/pages/disclaimer
 https://www.drshalinisdiet.com/disclaimer/
 https://www.jcfitness.in/disclaimer/
 
@@ -146,9 +150,13 @@ youe  success is my success.
 https://caliberstrong.com/
 https://www.punchlove.com.au/
 https://scottlaidler.com/online-personal-training/
+
+
 -- why / benefit
 
-
+add how it work section 
+ref images
+https://scottlaidler.com/online-personal-training/
 
 
 
