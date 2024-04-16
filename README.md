@@ -96,7 +96,7 @@ https://www.drshalinisdiet.com/disclaimer/
 https://www.jcfitness.in/disclaimer/
 
 --home page
- --intro/welcome sectin
+ --intro/welcome section
 
 https://www.greenbridge.co.uk/
 
