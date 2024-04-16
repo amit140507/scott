@@ -64,6 +64,23 @@ https://mywowfit.com/faq
 --privacy policy
 
 
+https://www.knockoutaustin.com/privacy
+https://windycitysc.com/terms-and-privacy
+https://www.fhittingroom.com/privacy-policy/
+https://www.fitnesseducation.edu.au/privacy-policy/
+https://harlem-cycle.com/privacy-policy/
+https://fit4mom.com/stroller-strides-privacy-policy
+https://kinective.com/privacy-policy/
+https://platefit.co/privacy-policy/
+https://www.2fitnesslovers.com/privacy-policy/
+https://www.jorjabarnes.com.au/privacy-policy
+https://mywowfit.com/privacypolicy
+https://caliberstrong.com/privacy-policy/
+https://www.corepoweryoga.com/content/privacy-policy
+https://us.johnreed.fitness/privacy-policy/
+https://rumbleboxing.com/policies
+https://modestmusclemvmt.com/privacy-policy/
+https://barmethod.com/privacy-policy/
 https://www.soul-cycle.com/legal/privacy-policy/#access-to-my-personal-information
 
 
