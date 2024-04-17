@@ -12,7 +12,7 @@
 html {
     color-scheme: dark light;
     font-family:
-    
+
     /* system-ui,
     'Segoe UI', */
     var(--base-font),
@@ -168,7 +168,7 @@ p { font-size: 1.00rem; } */
     font-weight: 500;
   } */
 
-  
+
 /* FROM REMEDY CSS */
 
 
@@ -176,7 +176,7 @@ p { font-size: 1.00rem; } */
 h1,
 h2,
 h3,
-h4, 
+h4,
 h5,
 h6{
     text-wrap: balance;
@@ -224,7 +224,7 @@ button,
 }
 
 small {
-    font-size: 80%;
+    font-size: 85%;
 }
 
 table {
@@ -274,8 +274,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 hr {
-	height: 0; /* 1 */
+    height: 0; /* 1 */
 	color: inherit; /* 2 */
+	display: block;
+	border: 0;
+	border-top: 1px solid var(--clr-white);
 }
 button {
     padding: 0;
@@ -292,24 +295,19 @@ header{
     background-color: var(--clr-theme-3);
 }
 footer{
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-theme-3);
 }
 
 a.anchor{
-    color: var(--clr-tertiary);
+    color: var(--clr-theme-3);
 }
-/* a.anchor:hover, a.anchor:focus{
+a.anchor:hover, a.anchor:focus{
     color: var(--clr-theme-5);
-} */
-/* a.anchor svg:hover{
-    color: red;
-} */
-a.anchor:not(a.anchor svg):hover{
-    color: rgb(153, 0, 255);
 }
+
 .header a {
          color: var(--clr-white);
-} 
+}
 /* .header a:hover {
     text-decoration: underline;
 }  */
@@ -323,20 +321,20 @@ a.anchor:not(a.anchor svg):hover{
         bottom: 0;
         left: 0;
         right: 0;
-        top: 1.25em;
+        top: 1.35em;
         height: 2px;
         background-color: var(--clr-white);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 250ms ease-in-out;
-    } 
+    }
     .nav-link:hover::before {
          transform: scaleX(1);
     }
 }
- 
+
 .footer a{
-        color: var(--clr-surface);
+        color: var(--clr-white);
     }
 .btn {
     /* display: inline-block; */
@@ -345,14 +343,16 @@ a.anchor:not(a.anchor svg):hover{
     color: var(--clr-white);
     border:1px var(--clr-theme-4) solid;
     border-radius: 0.3em;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    translate: 0em 0em;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out,translate 300ms ease-in-out;
     /* transition: transform 200ms ease-in-out; */
     font-weight: 500;
 }
 .btn:hover, a.btn:hover {
-    background-color: var(--clr-surface);
-    color: var(--clr-primary);    
+    background-color: var(--clr-white);
+    color: var(--clr-theme-4);
     /* transform: scale(1.05); */
+    translate: 0em -0.25em;
 }
 /*
 .btn{
@@ -379,30 +379,31 @@ a.anchor:not(a.anchor svg):hover{
 
 .btn-type-2 {
     padding:0.75em 1.5em;
-    background-color: var(--clr-primary);
-    color: var(--clr-surface);
-    border:1px var(--clr-primary) solid;
+    background-color: var(--clr-theme-5);
+    color: var(--clr-white);
+    border:1px var(--clr-theme-5) solid;
     border-radius: 0.3em;
-    
+    font-weight: 500;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .btn-type-2:hover {
-    background-color: var(--clr-surface); 
-    color:     var(--clr-primary);
+    background-color: var(--clr-white);
+    color:     var(--clr-theme-3);
 }
 ::-moz-selection { /* Code for Firefox */
     /* color: red; */
-    background: var(--clr-primary);
+    background: var(--clr-theme-3);
   }
-  
+
   ::selection {
-    color: var(--clr-surface);
-    background:var(--clr-primary);
+    color: var(--clr-white);
+    background:var(--clr-theme-3);
   }
   /* svg {
     fill: currentColor;
     color: var(--clr-tertiary);
   }
-    
+
   svg:hover {
     color: darkblue;
   } */
