@@ -3,14 +3,18 @@
 :root {
     /* Colors: */
     --clr-white: hsl(0, 0%, 100%);
-    --clr-grey: hsl(0, 0%, 91%);
-    --clr-darkgrey: hsl(204, 2%, 48%);
-    --clr-lightgrey: hsl(0, 0%, 97%);
-    --clr-text: hsl(204, 100%, 1%);
-    --clr-surface:hsl(200, 50%, 97%);
-    --clr-primary:hsl(200, 66%, 53%);
-    --clr-secondary: hsl(200, 76%, 71%);
-    --clr-tertiary: hsl(200, 85%, 64%);
+    --clr-black: hsl(204, 100%, 1%);
+
+    --clr-grey-1: hsl(0, 0%, 97%);
+    --clr-grey-2: hsl(0, 0%, 90%);
+    --clr-grey-3: hsl(0, 0%, 80%);
+    --clr-grey-4: hsl(204, 2%, 48%);
+    
+    --clr-theme-1:hsl(200, 50%, 97%);
+    --clr-theme-2:hsl(200, 50%, 80%);
+    --clr-theme-3:hsl(200, 76%, 71%);
+    --clr-theme-4:hsl(200, 85%, 64%);
+    --clr-theme-5:hsl(200, 66%, 53%);
     /* https://www.realtimecolors.com/?colors=0f1316-f4f7fa-4498ce-8bc9f1-43b3fd&fonts=Poppins-Poppins */
     /* Fonts */
     --base-font: 'IBM Plex Sans', sans-serif;
@@ -69,10 +73,8 @@ body:has(.show){
 
 a.nav-link {
     font-weight:500;
+    font-size: 1.15rem;
 }
-/* a.nav-link:hover, a.nav-link:active {
-    transform: translate(-2.1rem, -2ex);
-} */
 .header {
     position: sticky;
     top: 0;
@@ -371,30 +373,11 @@ li.nav-item:last-child:hover {
     margin-left: auto;
 }
 
-svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
-    width: 15px;
-    height: 15px;
+svg.header-logo {
+    width: 1rem;
+    height: 1rem;
 }
-@media (max-width: 800px) {
-    .home-page-welcome-section{
-        position: relative;
-        /* color: white; */
-    }
-    .home-page-welcome-section::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-    /* background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp); */
-    background-image:url(/assets/images/pexels-henry-&-co-1939485.jpg);
-    /* background-image:url(/assets/images/pexels-pixabay-260352.jpg); */
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.5;
 
-}
-}
 /* header */
 
 /* footer style */
@@ -448,19 +431,45 @@ padding-block: 5rem;
 
 /* footer style */
 
-/* home page start */
+/* home page welcome section */
+.home-page-welcome-section {
+    padding-top: 2rem;
+}
+.home-page-welcome-name {
+    margin-block: 0.5rem;
+    font-size: 7rem;
+    font-weight: 700 ;
+}
+@media (max-width: 800px) {
+    .home-page-welcome-section{
+        position: relative;
+    }
+    .home-page-welcome-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+    /* background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp); */
+    background-image:url(/assets/images/pexels-henry-&-co-1939485.jpg);
+    /* background-image:url(/assets/images/pexels-pixabay-260352.jpg); */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+}
 .container > h2{
     text-align: center;
 }
 /* intro section */
-section#welcome_section {
-    padding-top: 2rem;
-}
+
 .home-page-welcome-quote span {
     letter-spacing:-0.04em;
 }
 .home-page-intro{
-    color: var(--clr-darkgrey);
+    color: var(--clr-grey-4);
+    width: clamp(18.75rem, 100%, 31.25rem);
 }
 .home-page-welcome-image img{
     /* height: 70vh; */
@@ -468,11 +477,7 @@ section#welcome_section {
     max-width: 100%;
 }
 
-.home-page-welcome-name {
-    margin-block: 0.5rem;
-    font-size: 8rem;
-    font-weight: 500 ;
-}
+
 .home-page-welcome-quote{
     margin-top: 10px;
     margin-bottom: 44px;
@@ -1075,11 +1080,6 @@ text-align:center;
 }
 /* our services program */
 
-svg.svg-inline--fa.fa-phone, svg.svg-inline--fa.fa-whatsapp {
-    width: 15px;
-    height: 15px;
-}
-
 
 
 
@@ -1568,3 +1568,112 @@ label.form-label {
 
 
 /* get started page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+//////////////////////////////////////////////////////////////////////
+DESKTOP CSS
+//////////////////////////////////////////////////////////////////////
+*/
+
+
+/* BODY */
+
+/* BODY */
+
+/* HEADER */
+
+
+
+/* HEADER */
+
+
+/* FOOTER */
+
+
+
+/* FOOTER */
+
+/* HOME PAGE */
+
+/* ABOUT PAGE */
+
+/* PLANS AND PRICING PAGE */
+
+/* SERVICES PAGE */
+
+/* TRANSFORMATIONS PAGE */
+
+/* CONTACT PAGE */
+
+/* FAQ PAGE */
+
+/* GET STARTED PAGE */
+
+/* PRIVACY POLICY PAGE */
+
+/* TERMS AND CONDITIONS PAGE */
+
+/* DISCLAIMER PAGE */
+
+
+/* 
+//////////////////////////////////////////////////////////////////////
+RESPONSIVE CSS
+//////////////////////////////////////////////////////////////////////
+*/
+
+/* BODY */
+
+/* BODY */
+
+/* HEADER */
+
+
+
+/* HEADER */
+
+
+/* FOOTER */
+
+
+
+/* FOOTER */
+
+
+/* HOME PAGE */
+
+/* ABOUT PAGE */
+
+/* PLANS AND PRICING PAGE */
+
+/* SERVICES PAGE */
+
+/* TRANSFORMATIONS PAGE */
+
+/* CONTACT PAGE */
+
+/* FAQ PAGE */
+
+/* GET STARTED PAGE */
+
+/* PRIVACY POLICY PAGE */
+
+/* TERMS AND CONDITIONS PAGE */
+
+/* DISCLAIMER PAGE */

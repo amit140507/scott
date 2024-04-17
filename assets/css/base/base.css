@@ -289,7 +289,7 @@ a, button{
 /* backrgound color and color for all elements */
 
 header{
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-theme-3);
 }
 footer{
     background-color: var(--clr-secondary);
@@ -298,12 +298,17 @@ footer{
 a.anchor{
     color: var(--clr-tertiary);
 }
-a.anchor:hover, a.anchor:focus{
-    color: var(--clr-primary);
-    text-decoration: underline;
+/* a.anchor:hover, a.anchor:focus{
+    color: var(--clr-theme-5);
+} */
+/* a.anchor svg:hover{
+    color: red;
+} */
+a.anchor:not(a.anchor svg):hover{
+    color: rgb(153, 0, 255);
 }
 .header a {
-         color: var(--clr-surface);
+         color: var(--clr-white);
 } 
 /* .header a:hover {
     text-decoration: underline;
@@ -318,9 +323,9 @@ a.anchor:hover, a.anchor:focus{
         bottom: 0;
         left: 0;
         right: 0;
-        top: 1.25rem;
+        top: 1.25em;
         height: 2px;
-        background-color: var(--clr-surface);
+        background-color: var(--clr-white);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 250ms ease-in-out;
@@ -336,12 +341,13 @@ a.anchor:hover, a.anchor:focus{
 .btn {
     /* display: inline-block; */
     padding:0.75em 1.5em;
-    background-color: var(--clr-tertiary);
-    color: var(--clr-surface);
-    border:1px var(--clr-primary) solid;
+    background-color: var(--clr-theme-4);
+    color: var(--clr-white);
+    border:1px var(--clr-theme-4) solid;
     border-radius: 0.3em;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     /* transition: transform 200ms ease-in-out; */
+    font-weight: 500;
 }
 .btn:hover, a.btn:hover {
     background-color: var(--clr-surface);
