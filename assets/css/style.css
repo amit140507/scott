@@ -465,7 +465,7 @@ padding-block: 5rem;
 
 }
 }
-.container > h2{
+.container > h2, .container > p{
     text-align: center;
 }
 /* intro section */
@@ -597,23 +597,23 @@ ol.home-page-about-benefit li {
 /* succcess stories */
 
 .ind-success-stories {
-    border: 1px var(--clr-primary) solid;
+    border: 1px var(--clr-theme-4) solid;
 }
 .ind-success-stories .card-text {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
-.ind-success-stories div h5.card-title {
+/* .ind-success-stories div h5.card-title {
     padding-block: 5%;
     text-align: center;
-}
+} */
 
 .client-detail{
     display: flex;
     justify-content: space-between;
-    padding-inline: 5%;
+    padding-inline: 1em;
     flex-wrap: wrap;
-    background-color: var(--clr-lightgrey);
+    background-color: var(--clr-grey-1);
 }
 .client-improvement{
 flex-grow: 1;
@@ -627,7 +627,7 @@ flex-basis: 100%;
 .keyfigure-icon-section {
     width: 10rem;
     height: 10rem;
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-theme-3);
     border-radius: 100%;
     position: relative;
     margin-inline: auto;
@@ -639,6 +639,7 @@ flex-basis: 100%;
     position: absolute;
     top: 2.5em;
     left: 3em;
+    color: var(--clr-white);
 }
 .keyfigure-content-section .plus:after {
     content: '+';
@@ -777,15 +778,16 @@ a.backToTopBtn:hover,a.backToTopBtn:active {
 
 /* glide slider code */
 .glide__arrow{
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-theme-3);
     color: var(--clr-white);
-    border: 1px #7e7e7e solid;
+    border: 1px var(--clr-grey-3) solid;
     border-radius:5px;
     padding: 9px 9px 5px 9px;
 }
 .glide__arrow svg{
     width: 1rem;
     height:1rem;
+    color: var(--clr-black);
 }
 h4.client-name {
     margin: 1rem 0;
@@ -808,7 +810,7 @@ position:absolute;
 left: 95%;
 }
 .glide__arrow:hover{
-    background-color: var(--clr-surface);
+    background-color: var(--clr-white);
 }
 @media (max-width:800px) {
     .glide__arrow{
@@ -822,7 +824,7 @@ left: 95%;
     list-style: none;
 }
 .slider__bullet {
-    background-color: var(--clr-grey);
+    background-color: var(--clr-grey-2);
     width: 100%;
     /* height: 9px; */
     padding: 0;
@@ -837,7 +839,7 @@ left: 95%;
     margin: 0.25em 0;
 }
 .slider__bullet[class*=active] {
-    background-color: var(--clr-tertiary);
+    background-color: var(--clr-theme-3);
 }
 /* glide slider code */
 
@@ -889,9 +891,7 @@ p.card-text {
 
 .home-page-step-number {
     font-size: 10rem;
-}
-.home-page-step-number span{
-    color: var(--clr-grey);
+    color: var(--clr-grey-2);
 }
 
 .home-page-step {
@@ -1080,7 +1080,7 @@ text-align:center;
 }
 .ind-services {
    margin-bottom:2rem;
-   background-color: var(--clr-theme-3);
+   background-color: var(--clr-grey-1);
    /* color: var(--clr-white); */
    padding: 1rem;
 }
@@ -1275,12 +1275,12 @@ section.training-philisophy-section {
 /* our services page */
 
 
-/* plans page  */
+/* plans section  */
 .plan-pricing-page-main-div, .home-page-plan-main-div {
     display: flex;
     justify-content: space-evenly;
 }
-h1.plan-pricing-page-heading, p.plan-pricing-page-content {
+.home-page-plan-pricing-questions{
     text-align: center;
 }
 @media (max-width:800px) {
@@ -1301,9 +1301,9 @@ h1.plan-pricing-page-heading, p.plan-pricing-page-content {
     align-items: center;
 }
 .plan-pricing-page-box, .home-page-plan-box{
-    padding: 3%;
+    padding: 5%;
     margin: 3%;
-    border: 1px #d5d5d5 solid;
+    border: 1px var(--clr-grey-3) solid;
     border-radius:10px;
     text-align: center;
 }
