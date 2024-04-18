@@ -97,7 +97,6 @@ https://www.jcfitness.in/disclaimer/
 
 --home page
  --intro/welcome section
-
 https://www.greenbridge.co.uk/
 
 --plans and pricing
@@ -110,17 +109,79 @@ real members , real success stories
 youe  success is my success.
 
 --steps // workout plan
-
 https://caliberstrong.com/
 https://www.punchlove.com.au/
 https://scottlaidler.com/online-personal-training/
 
 
--- why / benefit
-
+-- why us / benefit
 add how it work section
 ref images
 https://scottlaidler.com/online-personal-training/
+
+
+steps | how it works
+
+1. let chat | book your assessment
+2. personaized plan
+3. see results with 1 on 1 | reach your goal
+
+1. let chat | book your assessment
+2. personaized plan
+3. see results with 1 on 1 | reach your goal
+
+1. let chat | book your assessment
+2. personaized plan
+3. see results with 1 on 1 | reach your goal
+
+
+1. let chat | book your assessment
+2. personaized plan
+3. support
+4. see results with 1 on 1 | reach your goal
+
+
+
+why us
+
+1. custom plan for you
+2. personalized nutrition and workout
+3. weekly checkin // tracking
+4. personlaized support
+
+1. custom plan for you
+2. result that stick
+3. personlaized support 
+
+1. highly rated
+2. personalized nutrition and workout
+3. Flexible
+4. personlaized support 
+
+1. custom plan for you
+2. personalized nutrition and workout
+3. Flexible // at home workout
+4. weekly checkin // tracking
+
+1. workout plan that fit
+2. result that stick
+3. personaized support
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
