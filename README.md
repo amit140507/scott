@@ -249,3 +249,10 @@ Your goal
 Select plan
 By ticking the box below I agree to have read the privacy policy and consent to the given information being used by More Than Muscle to contact me about their services.
 -->
+
+<!-- social proof -->
+Testimonials
+
+Add testimonials setion in home page about faq section.
+
+

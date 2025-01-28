@@ -1,0 +1,1 @@
+-use left align for majority of content.
