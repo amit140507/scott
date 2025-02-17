@@ -1,9 +1,9 @@
 INTRO SECTION / ABOVE THE FOLD
 -value proposition
 -explain the value you provide
--explain how youll create it
+-explain how you'll create it
 -heading emphsize value,result or transformation
--subheading explain what you providesto get those result
+-subheading explain what you provides to get those result
 
 --who we are
 --what we do
