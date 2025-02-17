@@ -394,6 +394,7 @@ svg.header-logo {
 /* footer style */
 .copyright-section {
     text-align: center;
+    color: var(--clr-white);
 }
 .footer-logo-img {
     max-width: 15rem;
@@ -965,7 +966,7 @@ div.home-page-get-started-form
     border-radius: 10px;
     background: var(--clr-theme-3);
     padding: 3rem;
-    box-shadow: 0px 10px 50px var(--clr-grey-3);
+    /* box-shadow: 0px 10px 50px var(--clr-grey-3); */
 }
 div.home-page-get-started-form form
 {
@@ -1588,7 +1589,13 @@ label.form-label {
         text-align: center;
     }
 }
-
+img.card-img-top, .ind-success-stories {
+    border-radius: 16px;
+}
+h2.success-stories-heading {
+    margin: unset;
+    margin-bottom: 40px;
+}
 /* https://65fa1ed5a552c70008ce545e--scott140507.netlify.app/get-started */
 
 
