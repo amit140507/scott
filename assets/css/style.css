@@ -463,8 +463,6 @@ padding-block: 5rem;
         position: absolute;
         inset: 0;
     /* background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp); */
-    background-image:url(/assets/images/pexels-henry-&-co-1939485.jpg);
-    /* background-image:url(/assets/images/pexels-pixabay-260352.jpg); */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -519,13 +517,13 @@ p.home-page-work-with-you {
 }
 @media (max-width:800px) {
     .home-page-welcome-main-div{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .home-page-welcome-name {
-        font-size: 65px;
+        font-size: 48px;
     }
-    .home-page-welcome-image{
-        display: none;
+    .home-page-welcome-content h3{
+    font-size: var(--step-1);
     }
 }
 /* about section */
