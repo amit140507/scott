@@ -287,6 +287,8 @@ li.nav-item:last-child:hover {
     margin-top: 15vh;
     margin-bottom: 36vh;
 }
+.header-join-now-mobile{display: none;}
+.header-join-now-mobile {display:block;border: 1px #ffffff solid;border-radius: 4px;padding: 0px 6px;}
     /* button#navbar-toggler {
         border: 1px black solid;
         padding: 5px 9px;
@@ -1595,6 +1597,10 @@ img.card-img-top, .ind-success-stories {
 h2.success-stories-heading {
     margin: unset;
     margin-bottom: 40px;
+}
+.header-join-now-mobile{display: none;}
+@media (max-width:992px) {
+.header-join-now-mobile {display:block;border: 1px #ffffff solid;border-radius: 4px;padding: 0px 6px;}
 }
 /* https://65fa1ed5a552c70008ce545e--scott140507.netlify.app/get-started */
 
