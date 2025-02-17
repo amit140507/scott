@@ -118,8 +118,8 @@ h2 {
 }
 
 h3 {
-    font-size: var(--step-3);
-    margin-block: var(--step-3);
+    font-size: var(--step-2);
+    /* margin-block: var(--step-3); */
 }
 
 h4 {
