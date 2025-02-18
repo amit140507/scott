@@ -114,7 +114,7 @@ h1 {
 
 h2 {
     font-size: var(--step-4);
-    margin-block: var(--step-4);
+    /* margin-block: var(--step-4); */
 }
 
 h3 {
@@ -124,7 +124,7 @@ h3 {
 
 h4 {
     font-size: var(--step-2);
-    margin-block: var(--step-2);
+    /* margin-block: var(--step-2); */
 }
 
 h5 {
@@ -407,3 +407,9 @@ a.anchor:hover, a.anchor:focus{
   svg:hover {
     color: darkblue;
   } */
+i{
+    font-style:italic;
+}
+em {
+    font-style: italic;
+  }
