@@ -801,6 +801,11 @@ a.btn.large {
 .accordion-collapse{
     display: none;
 }
+@media (prefers-color-scheme: dark){
+    .single-accordion-body{
+    color: var(--clr-black);
+}
+}
 /* faq section */
 
 
@@ -1158,11 +1163,12 @@ text-align:center;
 .services {
     display: flex;
     gap: 4%;
+    padding-block: 40px;
 }
 
 .ind-services {
     flex: 1;
-    background-color: var(--clr-theme-1);
+    background-color: var(--clr-theme-2);
     text-align: center;
     border-radius: 30%;
     aspect-ratio: 1 / 1;
@@ -1172,9 +1178,15 @@ text-align:center;
 .services-heading{
     margin-bottom: 40px;
 }
+.services-description {
+    color: var(--clr-black);
+}
 .ind-services  svg{ 
     width:50px;
     /* padding-block:15%; */
+}
+section.services-section {
+    background-color: var(--clr-theme-1);
 }
 @media (max-width:800px) {
     .services{
