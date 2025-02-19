@@ -533,6 +533,42 @@ p.home-page-work-with-you {
     font-size: var(--step-1);
     }
 }
+/* philosophy section */
+.home-page-philosophy-section-content{
+    display: flex;
+    gap: 5%;
+}
+.home-page-philosophy-section-content div:first-of-type{
+   background-color: #ffffff38;
+   border-radius: 100px 0px 0px 0px;
+   text-align: center;
+    padding: 12px;
+    color: var(--clr-white);
+}
+.home-page-philosophy-section-content div:first-of-type img{
+    clip-path:circle();
+    width: 250px;
+    display: inline-block;
+}
+.home-page-philosophy-section-content div:last-of-type {
+    align-self: center;
+    flex-grow: 1;
+    h2{
+             text-wrap: unset;
+    }
+    p{
+        color: var(--clr-white);
+    }
+}
+section.home-page-philosophy-section {
+    background-color: var(--clr-theme-2);
+}
+@media (max-width:767px) {
+    .home-page-philosophy-section-content{
+        flex-direction: column-reverse;
+    }
+}
+/* philosophy section */
 /* about section */
 
 h2.home-page-about-heading {
@@ -727,12 +763,29 @@ h2.faq-heading {
 .single-accordion-body{
     padding: 1rem 1.25rem;
 }
-section p:first-of-type{
-    margin-bottom:unset;
-    }
+
     .faq-description {
         color: var(--clr-grey-4);
     }
+    span.faq-subheading {
+    text-align: center;
+    display: block;
+}
+/* .get-started-section {
+    background-image: url(/assets/images/self/IMG_0238-flipped-horizontal.jpg);
+    background-position-y: 33%;
+  background-repeat: no-repeat; 
+  background-size: cover;
+   background-color:hsl(196deg 31.24% 79.39%);
+  background-blend-mode: overlay;
+} */
+.get-started-section {
+  background-color:hsl(196, 100%, 86%);
+}
+a.btn.large {
+    padding: 1rem 3rem;
+    font-size: large;
+}
 @media (max-width:800px) {
     .faq-row {
         flex-direction:column;
@@ -1038,6 +1091,9 @@ div.home-page-get-started-form form
   background-repeat: no-repeat; 
   background-size: cover; 
   border-radius: 12px;
+}
+.get-started-section h3{
+margin-block: 4rem;
 }
 @media (max-width:767px) {
     .home-page-get-started-form-and-content {
