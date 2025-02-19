@@ -625,7 +625,9 @@ ol.home-page-about-benefit li {
 
 
 /* succcess stories */
-
+section.success-stories-section {
+    background-color: var(--clr-theme-2);
+}
 .ind-success-stories {
     border: 1px var(--clr-theme-4) solid;
 }
@@ -711,7 +713,7 @@ section + section{
 
 /* faq section */
 section.faq-section {
-    background-color: var(--clr-theme-0);
+    background-color: var(--clr-theme-1);
 }
 .faq-row {
     padding-top: 1.25rem;
@@ -782,9 +784,6 @@ h2.faq-heading {
    background-color:hsl(196deg 31.24% 79.39%);
   background-blend-mode: overlay;
 } */
-.get-started-section {
-  background-color:hsl(196, 57%, 78%);
-}
 a.btn.large {
     padding: 1rem 3rem;
     font-size: large;
