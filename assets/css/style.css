@@ -570,7 +570,10 @@ section.home-page-philosophy-section {
 }
 /* philosophy section */
 /* about section */
-
+.home-page-about-section span {
+    text-align: center;
+    display: block;
+}
 h2.home-page-about-heading {
     font-size: 40px;
     padding-bottom: 40px;
@@ -780,7 +783,7 @@ h2.faq-heading {
   background-blend-mode: overlay;
 } */
 .get-started-section {
-  background-color:hsl(196, 100%, 86%);
+  background-color:hsl(196, 57%, 78%);
 }
 a.btn.large {
     padding: 1rem 3rem;
@@ -1184,6 +1187,13 @@ text-align:center;
 .ind-services  svg{ 
     width:50px;
     /* padding-block:15%; */
+}
+.services-section-icon{
+    width: 50px;
+    text-align: center;
+}
+.services-section-icon {
+    margin: 0 auto;
 }
 section.services-section {
     background-color: var(--clr-theme-1);
