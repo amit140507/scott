@@ -469,7 +469,6 @@ padding-block: 5rem;
         content: '';
         position: absolute;
         inset: 0;
-    /* background-image:url(/assets/images/valery-sysoev-LDAirERNzew-unsplash.webp); */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -778,7 +777,7 @@ h2.faq-heading {
     display: block;
 }
 .get-started-section {
-    background-image: url(/assets/images/self/IMG_0156-flipped-horizontal.jpg);
+    background-image: url(/assets/images/self/IMG_0156-flipped-horizontal_min.jpg);
     background-position-y: 33%;
   background-repeat: no-repeat; 
   background-size: cover;
