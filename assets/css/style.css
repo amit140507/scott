@@ -566,6 +566,7 @@ section.home-page-philosophy-section {
 @media (max-width:767px) {
     .home-page-philosophy-section-content{
         flex-direction: column-reverse;
+        gap: 24px;
     }
 }
 /* philosophy section */
