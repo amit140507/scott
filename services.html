@@ -31,7 +31,7 @@
     <!-- Font Awesome Link -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <!-- Font Family Link -->
-
+  <link rel=preload as=image href="/assets/images/low-res.jpg" fetchpriority=high>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -96,15 +96,22 @@
   <main>
     <!-- Our Programs -->
     <section class="services-page-section">
-      <div class="service-welcome-image">
+      <!-- <div class="service-welcome-image">
         <h1 class="services-heading">
           Our Services
         </h1>
-      </div>
+      </div> -->
       <div class="container">
         <div class="services-page">
           <div class="ind-services-page">
-            <div class="services-image"><img src="/assets/images/pexels-andres-ayrton-6551070.jpg" alt=""></div>
+            <div class="services-image">
+              <img src="/assets/images/pexels-andres-ayrton-6551070.jpg" alt="" width="620" height="620" style="background-image: url(low-res.jpg)">
+              <!-- <img src=hi-res.jpg
+       alt="Appropriate alternate text"
+       width=360
+       height=360
+       style="background-image: url(lo-res.jpg)"> -->
+            </div>
             <div class="content-service-page">
               <h3>WEIGHT MANAGEMENT</h3>
               <p>We offer complete techniques and solutions for gaining muscle or losing fat with proper fitness
