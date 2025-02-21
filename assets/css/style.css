@@ -778,17 +778,27 @@ h2.faq-heading {
 }
 .get-started-section {
     background-image: url(/assets/images/self/IMG_0156-flipped-horizontal_min.jpg);
-    background-position-y: 33%;
-  background-repeat: no-repeat; 
-  background-size: cover;
-   background-color:hsl(196deg 31.24% 79.39%);
-  background-blend-mode: overlay;
+    background-position-y: 42%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-color:hsl(196deg 31.24% 79.39%);
+    background-blend-mode: overlay;
 }
 a.btn.large {
     padding: 1rem 3rem;
     font-size: large;
 }
 @media (max-width:800px) {
+    .get-started-section {
+        background-position-y: 47%;
+        background-position-x: 58%;
+        background-size: 250%;
+    }
+    a.btn.large {
+        padding:0.5em 1.5em;
+        font-size: unset ;
+    }
     .faq-row {
         flex-direction:column;
     }
@@ -1256,7 +1266,12 @@ section.four0four-section {
 .four0four-content p{
     margin-bottom:20px;
 }
-
+.four0four-content {
+    margin-block: 5em;
+    p{
+        font-size:24px;
+    }
+}
 /* 404 page */
 
 
@@ -1715,8 +1730,38 @@ section h2:first-of-type{
 
 /* get started page */
 
+/* insta feed */
+.insta-feed-section{
+    background-color: var(--clr-theme-0);
+}
+.single-insta-post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:16px;
+    a{
+        width:23%;
+    }
+    img{
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+.insta-feed-heading{
+    text-align: center;
+    margin-block: 2em;
+}
+@media screen and (max-width:767px) {
+    .single-insta-post{
+        align-items:center;
+        flex-direction:column;
+        a{
+            width:90%
+        }
+    }
+}
 
-
+/* insta feed */
 
 
 
