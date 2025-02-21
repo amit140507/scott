@@ -543,6 +543,7 @@ p.home-page-work-with-you {
    text-align: center;
     padding: 12px;
     color: var(--clr-white);
+    box-shadow: 7px 7px 5px 0px var(--clr-theme-5);
 }
 .home-page-philosophy-section-content div:first-of-type img{
     clip-path:circle();
@@ -732,7 +733,8 @@ h2.faq-heading {
 }
 .single-accordion-item {
     margin: 1rem;
-    box-shadow: 0px 0px 3px 1px var(--clr-theme-3);
+    /* box-shadow: 0px 0px 3px 1px var(--clr-theme-3); */
+    box-shadow:4px 5px 9px 1px var(--clr-theme-3)
 }
 
 .single-accordion-button {
@@ -1181,18 +1183,20 @@ text-align:center;
 
 .ind-services {
     flex: 1;
-    background-color: var(--clr-theme-2);
+    background-color: var(--clr-theme-0);
     text-align: center;
     border-radius: 30%;
     aspect-ratio: 1 / 1;
     padding-block: 4%;
+    color: var(--clr-theme-5);
+    box-shadow: 0px 4px 5px 1px var(--clr-theme-5); 
     
 }
 .services-heading{
     margin-bottom: 40px;
 }
 .services-description {
-    color: var(--clr-black);
+    color: var(--clr-theme-5);
 }
 .ind-services  svg{ 
     width:50px;
